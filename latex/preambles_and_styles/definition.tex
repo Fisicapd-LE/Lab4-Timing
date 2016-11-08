@@ -1,0 +1,15 @@
+\newtoggle{draft}
+\togglefalse{draft}
+
+\newcommand{\toprof}[1]
+{
+  \iftoggle{draft}{\emph{#1}}{}
+}
+
+\newcommand{\dd}{\mathop{}\,\mathrm{d}}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}

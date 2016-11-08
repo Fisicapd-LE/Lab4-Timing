@@ -1,0 +1,17 @@
+#!/bin/bash
+
+testo="
+	\documentclass{standalone}
+	\begin{document}
+	 \begin{grafico}
+	  \centering
+	   \includegraphics{../graphs/$1.pdf}
+	   \caption{Grafico $(basename $1)}
+	   \label{gr:$1}
+	 \end{grafico}
+	\end{document}
+	"
+	
+echo $testo > ./latex/graphs/$1.tex
+
+exit 0;

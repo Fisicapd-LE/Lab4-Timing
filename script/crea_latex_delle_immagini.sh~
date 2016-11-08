@@ -1,0 +1,19 @@
+#!/bin/bash
+pwd
+cd ./img
+
+for f in * 
+do
+testo="
+\begin{figure}
+ \centering 
+ \includegraphics[width=\textwidth]{${f}}
+ \caption{Alimentazione OpAmp} 
+\end{figure}
+"
+
+echo $testo >../../latex/img/${f}
+
+done
+
+exit 0;
