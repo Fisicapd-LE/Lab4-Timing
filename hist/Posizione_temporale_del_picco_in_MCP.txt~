@@ -1,1 +1,0 @@
-Istogramma della posizione del massimo del segnale in un campione da 5000000 eventi presi con l'MCP-PMT. Il trigger si trova a 2000 ns. La linea rossa indica l'interpolazione gaussiana fatta nell'istogramma per ricavare il centro della distribuzione
