@@ -1,4 +1,4 @@
-SHELL=/bin/bash -O extglob -c
+SHELL=/bin/bash -O extscript/glob -c
 
 # IL file in latex della relazione
 FILE_REL_TEX = $(wildcard ./latex/main/*.tex)
@@ -79,11 +79,11 @@ slides: ./latex/slide/sections/slides.tex
 	
 .SECONDEXPANSION:
 	
-$(GRAPHS): ./latex/graphs/%.tex: $$(shell ./glob "./graphs/%*(_nofloat).pdf")  $$(shell ./glob "./graphs/%*(_nofloat).png") $$(wildcard ./graphs/%.txt) ./script/to_latex/graph_to_latex.sh
+$(GRAPHS): ./latex/graphs/%.tex: $$(shell ./script/glob "./graphs/%*(_nofloat).pdf")  $$(shell ./script/glob "./graphs/%*(_nofloat).png") $$(wildcard ./graphs/%.txt) ./script/to_latex/graph_to_latex.sh
 	./script/to_latex/graph_to_latex.sh $* $(filter %.pdf %.png, $<)
 	
-$(HISTS): ./latex/hist/%.tex: $$(shell ./glob "./hist/%*(_nofloat).pdf") $$(shell ./glob "./hist/%*(_nofloat).png") $$(wildcard ./hist/%.txt) ./script/to_latex/hist_to_latex.sh
+$(HISTS): ./latex/hist/%.tex: $$(shell ./script/glob "./hist/%*(_nofloat).pdf") $$(shell ./script/glob "./hist/%*(_nofloat).png") $$(wildcard ./hist/%.txt) ./script/to_latex/hist_to_latex.sh
 	./script/to_latex/hist_to_latex.sh $* $(filter %.pdf %.png, $<)
 
-$(IMGS): ./latex/img/%.tex: $$(shell ./glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).pdf") $$(shell ./glob "./img/%*(_nofloat).png") $$(shell ./glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).jpg") $$(wildcard ./img/%.txt) ./script/to_latex/img_to_latex.sh
+$(IMGS): ./latex/img/%.tex: $$(shell ./script/glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).pdf") $$(shell ./script/glob "./img/%*(_nofloat).png") $$(shell ./script/glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).jpg") $$(wildcard ./img/%.txt) ./script/to_latex/img_to_latex.sh
 	./script/to_latex/img_to_latex.sh $* $(filter %.pdf %.png %.jpg, $<) 

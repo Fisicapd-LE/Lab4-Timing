@@ -41,10 +41,10 @@ TTree* calib(TTree * data_no_calib)
   
   //creating output variables
   TTree * calibrated = new TTree("calibrated", "calibrated");
-  calibrated->Branch("ch0cal" , "ch0cal/F", &temp0cal);
-  calibrated->Branch("ch1cal" , "ch1cal/F", &temp1cal);
-  calibrated->Branch("ch2cal" , "ch2cal/F", &temp2cal);
-  calibrated->Branch("ch3cal" , "ch3cal/F", &temp3cal);
+  calibrated->Branch("ch0cal" , &temp0cal, "ch0cal/F");
+  calibrated->Branch("ch1cal" , &temp1cal, "ch1cal/F");
+  calibrated->Branch("ch2cal" , &temp2cal, "ch2cal/F");
+  calibrated->Branch("ch3cal" , &temp3cal, "ch3cal/F");
   
   ch0->SetAddress(&temp0);
   ch1->SetAddress(&temp1);
