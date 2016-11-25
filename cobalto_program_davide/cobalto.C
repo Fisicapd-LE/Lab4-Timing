@@ -34,7 +34,7 @@ int cobalto()
   Double_t step_thresh = 100;
   
   TList threshold_list;
-  TH1F * threshold_histo = new TH1F("test", "", 10,0,100);
+  TH1F * threshold_histo = new TH1F("threshold_histo", "", 10,0,100);
   
   for (int i = min_thresh; i < max_thresh; i += step_thresh)
   {
@@ -51,7 +51,7 @@ int cobalto()
   Double_t step_interv = 100;
   
   TList interval_list;
-  TH1F * interval_histo = new TH1F("test2", "", 10,0,100);
+  TH1F * interval_histo = new TH1F("interval_histo", "", 10,0,100);
   
   for (int i = min_interv; i < max_interv; i += step_interv)
   {

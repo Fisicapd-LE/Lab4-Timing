@@ -1,8 +1,8 @@
-SHELL=/bin/bash -O extscript/glob -c
+SHELL=/bin/bash -O extglob -c
 
 # IL file in latex della relazione
-FILE_REL_TEX = $(wildcard ./latex/main/*.tex)
-FILE_SLIDE_TEX = $(wildcard ./latex/slide/*.tex)
+FILE_REL_TEX = $(wildcard ./latex/*.tex)
+FILE_SLIDE_TEX = $(wildcard ./latex/*.tex)
 # Crea il nome del file .pdf da produrre dal nome del .tex
 PDF_RELAZIONE = $(patsubst %.tex, %.pdf, $(FILE_REL_TEX) )
 BASENAME_TEX = $(shell basename -a $(FILE_REL_TEX))
@@ -34,11 +34,11 @@ $(PDF_RELAZIONE): graphs img hist chapters appendix
 #Ogni riga viene eseguita in una subshell diversa, quindi se faccio cd devo mettere sulla stessa linea gli altri comandi che necessitano dell'effetto di cd
 	cd ./latex;	pwd; latexmk -pdf $(BASENAME_TEX)
 	
-./latex/sections/chapters.tex: ./latex/main/sections/chapters
+./latex/sections/chapters.tex: ./latex/sections/chapters
 	@echo "Adding chapters"
 	./script/add_sections/add_chapters.sh
 
-./latex/sections/appendix.tex: ./latex/main/sections/appendix
+./latex/sections/appendix.tex: ./latex/sections/appendix
 	@echo "Adding appendix"
 	./script/add_sections/add_appendix.sh
 
@@ -51,9 +51,8 @@ clean:
 	-rm ./latex/graphs/*.tex
 	-rm ./latex/hist/*.tex
 	-rm ./latex/img/*.tex
-	-rm ./latex/main/sections/chapters.tex
-	-rm ./latex/main/sections/appendix.tex
-	-rm ./latex/slide/sections/slides.tex
+	-rm ./latex/sections/chapters.tex
+	-rm ./latex/sections/appendix.tex
 	-rm $(BASENAME_PDF)
 	
 graphs: graphlog $(GRAPHS)
@@ -71,19 +70,17 @@ img: imglog $(IMGS)
 imglog:
 	@echo "Formatting images..."
 	
-chapters: ./latex/main/sections/chapters.tex
+chapters: ./latex/sections/chapters.tex
 
-appendix: ./latex/main/sections/appendix.tex
-
-slides: ./latex/slide/sections/slides.tex
+appendix: ./latex/sections/appendix.tex
 	
 .SECONDEXPANSION:
 	
-$(GRAPHS): ./latex/graphs/%.tex: $$(shell ./script/glob "./graphs/%*(_nofloat).pdf")  $$(shell ./script/glob "./graphs/%*(_nofloat).png") $$(wildcard ./graphs/%.txt) ./script/to_latex/graph_to_latex.sh
-	./script/to_latex/graph_to_latex.sh $* $(filter %.pdf %.png, $<)
+$(GRAPHS): ./latex/graphs/%.tex: $$(shell ./script/glob "./graphs/%*(_nofloat).tex") $$(shell ./script/glob "./graphs/%*(_nofloat).pdf")  $$(shell ./script/glob "./graphs/%*(_nofloat).png") $$(wildcard ./graphs/%.txt) ./script/to_latex/graph_to_latex.sh
+	./script/to_latex/graph_to_latex.sh $* $(filter %.tex %.pdf %.png, $<)
 	
-$(HISTS): ./latex/hist/%.tex: $$(shell ./script/glob "./hist/%*(_nofloat).pdf") $$(shell ./script/glob "./hist/%*(_nofloat).png") $$(wildcard ./hist/%.txt) ./script/to_latex/hist_to_latex.sh
-	./script/to_latex/hist_to_latex.sh $* $(filter %.pdf %.png, $<)
+$(HISTS): ./latex/hist/%.tex: $$(shell ./script/glob "./hist/%*(_nofloat).tex") $$(shell ./script/glob "./hist/%*(_nofloat).pdf") $$(shell ./script/glob "./hist/%*(_nofloat).png") $$(wildcard ./hist/%.txt) ./script/to_latex/hist_to_latex.sh
+	./script/to_latex/hist_to_latex.sh $* $(filter %.tex %.pdf %.png, $<)
 
-$(IMGS): ./latex/img/%.tex: $$(shell ./script/glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).pdf") $$(shell ./script/glob "./img/%*(_nofloat).png") $$(shell ./script/glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).jpg") $$(wildcard ./img/%.txt) ./script/to_latex/img_to_latex.sh
-	./script/to_latex/img_to_latex.sh $* $(filter %.pdf %.png %.jpg, $<) 
+$(IMGS): ./latex/img/%.tex: $$(shell ./script/glob "./img/%*(_nofloat).tex") $$(shell ./script/glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).pdf") $$(shell ./script/glob "./img/%*(_nofloat).png") $$(shell ./script/glob "./img/%*(_nofloat|_nolarge|_sub[0-9]).jpg") $$(wildcard ./img/%.txt) ./script/to_latex/img_to_latex.sh
+	./script/to_latex/img_to_latex.sh $* $(filter %.tex %.pdf %.png %.jpg, $<) 
