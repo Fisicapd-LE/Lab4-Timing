@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  26 NOV 2016 12:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  26 NOV 2016 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2499,31 +2499,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  (./sections/files/analysis/cobalto_analisi.tex
 (./tables/cobalto_risultati.tex)
 Package hyperref Info: bookmark level for unknown tabella defaults to 0 on inpu
-t line 12.
+t line 14.
 
 
-! LaTeX Error: \include cannot be nested.
+! LaTeX Error: File `./graphs/cobalto_risoluzioni.tex' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \include{graphs/cobalto_risoluzioni.tex}
-                                             \\
-? x
- 
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: x
+
+ ) ) ) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 25 ({)
+### bottom level
+(\end occurred when \ifx on line 20 was incomplete)
+(\end occurred when \ifx on line 20 was incomplete)
+(\end occurred when \iftrue on line 5 was incomplete)
+(\end occurred when \ifnum on line 5 was incomplete) 
 Here is how much of TeX's memory you used:
- 40339 strings out of 493304
- 845695 string characters out of 6139871
- 1051791 words of memory out of 5000000
+ 40348 strings out of 493304
+ 845669 string characters out of 6139871
+ 1053791 words of memory out of 5000000
  42884 multiletter control sequences out of 15000+600000
- 57216 words of font info for 63 fonts, out of 8000000 for 9000
+ 57748 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  58i,11n,85p,10447b,895s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/
-enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qplb.
-pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pfb></usr/share/texmf/fo
-nts/type1/public/tex-gyre/qplri.pfb>
+{/usr/share/texmf/fonts/enc
+/dvips/tex-gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc
+}</usr/share/texmf/fonts/type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts
+/type1/public/tex-gyre/qplr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/q
+plri.pfb>
 Output written on Relazione.pdf (6 pages, 409984 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)

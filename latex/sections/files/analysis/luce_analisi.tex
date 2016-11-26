@@ -1,0 +1,90 @@
+Si vuole utilizzare l'apparato a disposizione per misurare la velocità della luce. Si noti che con tale apparato è possibile misurare solamente differenze di tempi
+e non tempi assoluti (vista tutta l'elettronica utilizzata). Le misure sono state prese come descritto nell'analisi dati, e a disposizione quindi si hanno:
+\begin{itemize}
+\item la distanza tra i due rivelatori
+\item i diversi ritardi nella rivelazione nelle due diverse configurazioni
+\item le dimensioni del piombo contenente la sorgente
+\item il datasheet dei rivelatori
+\end{itemize}
+Si cerchi una formula per ricavare la velocità della luce date queste informazioni. Il ragionamento farà uso di due approssimazioni: la sorgente è puntiforme lungo la direzione
+di volo dei fotoni rivelati (assumibile in quanto consisteva in un disco posto in maniera perpendicolare a tale direzione)
+e si può pensare il fotone venga rivelato sempre nella stessa posizione dentro il rivelatore.\\
+
+Con tali ipotesi, si considerino le misure di lunghezze con la seguente notazione:
+\begin{itemize}
+\item $R_1$ indica lo spazio medio percorso dai fotoni nel rivelatore prima di interagire con lo stesso
+\item $x_1$ indica la distanza tra la placca in piombo più vicina e il rivelatore 1
+\item $\delta_1$ indica lo spessore della placca in piombo più vicina al rivelatore 1
+\end{itemize}
+E analoga notazione per quanto riguarda il rivelatore 2. In poche parole le ipotesi fatte consistono nel fatto che $R_1=R_2$ e che questi valori si possono prendere
+come esatti.\footnote{In realtà, questa ipotesi viene verificata nel limite delle infinite misure; dato che il campione preso è sufficientemente grande, si suppone essa sia
+valida}\\
+
+A questo punto, se la configurazione è la A, si possono descrivere i tempi di percorrenza dei fotoni prima che vengano rivelati come\footnote:
+$$
+  t_{1A} = \frac{\delta_1 + nR_1}{c} \hspace{2cm} t_{2A} = \frac{\delta_2 + x_2 + nR_2}{c}
+$$
+Ove $n$ indica il coefficiente di rigrazione all'interno del rivelatore stesso. Quindi il TAC rivelerà l'intervallo temporale:
+$$
+  \delta t_A = t_{2A} - t_{1A} = \frac{\delta_2 + x_2 + nR_2-\delta_1-nR_1}{c}
+$$
+Analogamente per la configurazione B si trova:
+$$
+  t_{1B} = \frac{\delta_1 + x_1 + nR_1}{c} \hspace{2cm} t_{2B} = \frac{\delta_2 + nR_2}{c}
+$$
+e l'intervallo rilevato dal TAC sarà:
+$$
+  \Delta t_B = t_{2B} - t_{1B} = \frac{\delta_2 + nR_2 - \delta_1 - x_1 - nR_1}{c}
+$$
+A questo punto, però, questi due intervalli non hanno senso presi singolarmente, in quanto non rivelano effettivamente un intervallo temporale ma il tempo riferito ad
+uno zero che, sebbene non sia noto oggettivamente, è lo stesso per entrambe le misure (infatti non si è toccato l'apparato strumentale se non per spostare la sorgente
+racchiusa tra le placche di piombo). Perciò ha senso fisico la loro differenza, che si può stimare con facilità:
+$$
+  \Delta t = \Delta t_A - \Delta t_B = \frac{{\delta_2 + x_2 + nR_2 - \delta_1 - nR_1}{-\delta_2 - nR_2 + \delta_1 + x_1 + nR_1}}{c} = \frac{x_1 + x_2}{c}
+$$
+Perciò per stimare la velocità della luce è sufficiente andare a misurare la distanza dei due rivelatori a meno delle placche di piombo e la distanza temporale tra i due
+picchi nei grafici calibrati del TAC. Però, in sede di esecuzione dell'esperimento, non si è effettivamente misurata quella distanza ma solamente le distanze tra la sorgente
+e i rivelatori nelle due configurazioni, quindi si ha una stima di $\delta$ e una stima di $ 2 * delta + x$ per i due casi.\\
+
+Si venga alla vera e propria analisi dati: si vuole applicare la formula, appena dimostrata:
+$$
+  c = {x_1+x_2}{\Delta t}
+$$
+si ragioni sul numeratore, cioè la misura di lunghezza: si conoscono i valori, misurati con il metro:
+$$
+  d = 173.2 cm \hpsace{2cm} \delta = 3.7 cm
+$$
+ove d indica la distanza tra i due rivelatori e $\delta$ indica le misure (uguali) dei blocchi di piombo.
+Ora si è interessati a $x_1+x_2$, per motivi geometrici si può riscrivere in funzione delle variabili misurate come:
+$$
+  x_1+x_2 = 2 ( d - 2 \delta)
+$$
+Come errore sulle variabili si considera un errore triangolare associato al fatto che il metro aveva una scala dei millimetri, quindi si ha
+$$
+  \sigma_\d = \sigma_\delta = \frac{0.5\text{mm}}{\sqrt6} = 0.2 mm
+$$
+\\
+
+SOra si pensi al denominatore dell'equazione per la velocità della luce, cioè la differenza tra le distanze temporali nelle due diverse configurazioni dell'esperimento.
+Si riscriva tenendo conto della calibrazione:
+$$
+  \DElta t = \Delta t_A - \Delta t_B = m\Delta t_A + q - m\Delta t_B - q = m (\Delta t_A - \Delta t_B) 
+$$
+Ove $m,q$, sono i coefficienti della calibrazione stimati nelle sezioni precedenti. I due picchi si possono vedere, già calibrati, nella figura sottostante.\\
+\include{graphs/luce_picchi}
+Nonostante questa figura sia utile da vedere in quanto calibrata, è necessario operare con i centroidi non calibrati se si vuole avere un'analisi che tengo conto anche
+della correlazione degli errori di calibrazione. Quindi, nella tabella sottostante, si riportano i valori dei centroidi sia prima della calibrazione (quindi in canali)
+che dopo la calibrazione (e quindi in nanosecondi), con gli errori presentati come errori sui parametri dell'interpolazione fatta:
+\inculde{tab/luce_centroidi}
+\\
+
+Presentati questi dati, è possibile passare alla vera e propria stima della velocità della luce, alla quale è ovviamente necessario associare un errore. Dati i preamboli
+fatti, si può considerare la formula (espansa in modo da risolvere i problemi di correlazione, perciò è possibile ottenere l'errore tramite semplice propagazione
+lineare):
+$$
+  c = \frac{2 ( d - 2 \delta)}{m (\Delta t_A - \Delta t_B)_\text{canali}} = (2.95 \pm 0.01) \times 10^8 m/s 
+$$
+\\
+
+Si noti che non si sta considerando correlazione tra le misure spaziali (cioè si considera il metro supponendo che la scala su di esso stampata sia perfetta)
+
