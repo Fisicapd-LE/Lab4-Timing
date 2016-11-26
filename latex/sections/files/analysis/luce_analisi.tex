@@ -52,7 +52,7 @@ $$
 $$
 si ragioni sul numeratore, cioè la misura di lunghezza: si conoscono i valori, misurati con il metro:
 $$
-  d = 173.2 cm \hpsace{2cm} \delta = 3.7 cm
+  d = 173.2 cm \hspace{2cm} \delta = 3.7 cm
 $$
 ove d indica la distanza tra i due rivelatori e $\delta$ indica le misure (uguali) dei blocchi di piombo.
 Ora si è interessati a $x_1+x_2$, per motivi geometrici si può riscrivere in funzione delle variabili misurate come:
@@ -61,22 +61,22 @@ $$
 $$
 Come errore sulle variabili si considera un errore triangolare associato al fatto che il metro aveva una scala dei millimetri, quindi si ha
 $$
-  \sigma_\d = \sigma_\delta = \frac{0.5\text{mm}}{\sqrt6} = 0.2 mm
+  \sigma_d = \sigma_\delta = \frac{0.5\text{mm}}{\sqrt6} = 0.2 mm
 $$
 \\
 
 SOra si pensi al denominatore dell'equazione per la velocità della luce, cioè la differenza tra le distanze temporali nelle due diverse configurazioni dell'esperimento.
 Si riscriva tenendo conto della calibrazione:
 $$
-  \DElta t = \Delta t_A - \Delta t_B = m\Delta t_A + q - m\Delta t_B - q = m (\Delta t_A - \Delta t_B) 
+  \Delta t = \Delta t_A - \Delta t_B = m\Delta t_A + q - m\Delta t_B - q = m (\Delta t_A - \Delta t_B) 
 $$
 Ove $m,q$, sono i coefficienti della calibrazione stimati nelle sezioni precedenti. I due picchi si possono vedere, già calibrati, nella figura sottostante.\\
-\include{graphs/luce_picchi}
+\input{./graphs/light}
 Nonostante questa figura sia utile da vedere in quanto calibrata, è necessario operare con i centroidi non calibrati se si vuole avere un'analisi che tengo conto anche
 della correlazione degli errori di calibrazione. Quindi, nella tabella sottostante, si riportano i valori dei centroidi sia prima della calibrazione (quindi in canali)
 che dopo la calibrazione (e quindi in nanosecondi), con gli errori presentati come errori sui parametri dell'interpolazione fatta:
-\inculde{tab/luce_centroidi}
-\\
+\input{tables/luce_centroidi}
+
 
 Presentati questi dati, è possibile passare alla vera e propria stima della velocità della luce, alla quale è ovviamente necessario associare un errore. Dati i preamboli
 fatti, si può considerare la formula (espansa in modo da risolvere i problemi di correlazione, perciò è possibile ottenere l'errore tramite semplice propagazione
