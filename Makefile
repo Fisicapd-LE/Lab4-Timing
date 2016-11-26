@@ -8,17 +8,17 @@ PDF_RELAZIONE = $(patsubst %.tex, %.pdf, $(FILE_REL_TEX) )
 BASENAME_TEX = $(shell basename -a $(FILE_REL_TEX))
 BASENAME_PDF = $(patsubst %.tex, %.pdf, $(BASENAME_TEX) )
 
-GRAPHS_RAW = $(wildcard ./graphs/*[!.txt][!.txt~])
+GRAPHS_RAW = $(shell ./script/glob "./graphs/*.!(txt)")
 GRAPHS_NOEXT = $(foreach graph, $(GRAPHS_RAW), $(subst ./, ./latex/, $(graph)))
 GRAPHS_WITH_RULES = $(patsubst %.pdf, %.tex, $(patsubst %.png, %.tex, $(GRAPHS_NOEXT)))
 GRAPHS = $(subst _nofloat,, $(GRAPHS_WITH_RULES))
 
-HISTS_RAW = $(wildcard ./hist/*[!.txt][!.txt~])
+HISTS_RAW = $(shell ./script/glob "./hist/*.!(txt)")
 HISTS_NOEXT = $(foreach hist, $(HISTS_RAW), $(subst ./, ./latex/, $(hist)))
 HISTS_WITH_RULES = $(patsubst %.pdf, %.tex, $(patsubst %.png, %.tex, $(HISTS_NOEXT)))
 HISTS = $(subst _nofloat,, $(HISTS_WITH_RULES))
 
-IMGS_RAW = $(wildcard ./img/*[!.txt][!.txt~])
+IMGS_RAW = $(shell ./script/glob "./img/*.!(txt)")
 IMGS_NOEXT = $(foreach img, $(IMGS_RAW), $(subst ./, ./latex/, $(img)))
 IMGS_WITH_RULES = $(patsubst %.pdf, %.tex, $(patsubst %.png, %.tex, $(IMGS_NOEXT)))
 IMGS = $(subst _nofloat,, $(subst _nolarge,,$(foreach img, $(IMGS_WITH_RULES), $(subst $(shell echo $(img) | grep -o -P "_sub[0-9]"),,$(img)))))
@@ -59,6 +59,8 @@ graphs: graphlog $(GRAPHS)
 
 graphlog:
 	@echo "Formatting graphs..."
+	@echo $(GRAPHS_RAW)
+	@echo $(GRAPHS)
 
 hist: histlog $(HISTS)
 

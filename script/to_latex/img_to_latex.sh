@@ -20,7 +20,12 @@ fi
 
 if [ ${2//nolarge} == $2 ]
 then
+	if [ $2 =~ tex ] 
+	then
+	 testo=$testo"\resizebox{\textwidth}{!}{\include{../../$2}}"
+	else
 	 testo=$testo"\includegraphics[width=\textwidth]{../../$2}"
+	fi
 else
 	 testo=$testo"\includegraphics{../../$2}"
 fi
