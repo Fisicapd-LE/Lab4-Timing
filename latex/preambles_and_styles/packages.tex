@@ -11,7 +11,7 @@
 
 %%%%%
 %\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
-%\usepackage{AlegreyaSans} %% Option 'black' gives heavier bold face 
+\usepackage{AlegreyaSans} %% Option 'black' gives heavier bold face 
 %\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
 %\usepackage{opensans}
 %\usepackage[euler-digits,euler-hat-accent]{eulervm}
@@ -112,8 +112,9 @@
 %\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
 %\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
 % \usefont {encoding} {family} {series} {shape}
-%\titleformat{\section}[block]{\AlegreyaSansSC \bfseries \LARGE}{\thesection.}{1em}{} % Change the look of the section titles. Pezzi spostati \scshape\centering\bfseries
-%\titleformat{\subsection}[block]{\AlegreyaSans \bfseries \Large}{\thesection.\thesubsection }{1em}{} % Change the look of the section titles
+%\AlegreyaSansSC
+\titleformat{\section}[block]{ \bfseries \LARGE}{\thesection.}{1em}{} % Change the look of the section titles. Pezzi spostati \scshape\centering\bfseries
+\titleformat{\subsection}[block]{\bfseries \Large}{\thesection.\thesubsection }{1em}{} % Change the look of the section titles
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
