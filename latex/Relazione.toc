@@ -1,7 +1,6 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {section}{\numberline {1}Test Chapter}{1}{section.1}
-\contentsline {section}{\numberline {2}Analisi Dati}{6}{section.2}
-\contentsline {section}{\numberline {3}Studio della risoluzione temporale al variare dell'energia}{6}{section.3}
-\contentsline {section}{\numberline {4}Velocit\IeC {\`a} della luce}{9}{section.4}
-\contentsline {section}{\numberline {5}appendice test}{12}{section.5}
+\contentsline {section}{\numberline {1}Analisi Dati}{2}{section.1}
+\contentsline {section}{\numberline {2}Studio della risoluzione temporale al variare dell'energia}{2}{section.2}
+\contentsline {section}{\numberline {3}Velocit\IeC {\`a} della luce}{5}{section.3}
+\contentsline {section}{\numberline {4}appendice test}{8}{section.4}
