@@ -1,0 +1,9 @@
+\subsection{Analisi dai dati digitali}
+Si è usato il campione preso con il digitizer per fare un confronto tra le misure prese con l'apparato analogico e quelle prese digitalmente.\\
+Per prima cosa è stato ricavato un segnale medio per canale, ottenendo così tempo di salita, di discesa e ampiezza media. I due grafici ottenuti sono mostrati in Fig. \ref{fig:mean_signal_ch0} e Fig. \ref{fig:mean_signal_ch1}
+
+Immagini belle
+
+Tabella bella
+
+Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra i 4 e i 12 ns e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero cressing si è fatta un interpolazione con una cubica tra i punti di massimo e minimo del segnale di ``CF monitor'', dato che l'interpolazione con una retta come suggerito aveva d
