@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.18)  30 NOV 2016 15:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.18)  30 NOV 2016 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2437,18 +2437,29 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(./sections/thesis_title.tex
-<../img/nofloat/logo_unipd.jpg, id=27, 192.72pt x 191.5155pt>
-File: ../img/nofloat/logo_unipd.jpg Graphic file (type jpg)
+(./sections/relation_title.tex
+Overfull \hbox (37.97852pt too wide) in paragraph at lines 6--6
+ []| 
+ []
 
-<use ../img/nofloat/logo_unipd.jpg>
-Package pdftex.def Info: ../img/nofloat/logo_unipd.jpg used on input line 4.
-(pdftex.def)             Requested size: 103.00537pt x 102.36186pt.
- [1
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/qpl/m/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/qpl/b/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/qpl/b/sc/20.74'.
+(microtype)             Ignoring protrusion settings for this character.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../img/nofloat/logo_unipd.
-jpg>]) (./sections/abstract.tex)
-(./Relazione.toc)
+Overfull \hbox (37.97852pt too wide) in paragraph at lines 31--31
+ []| 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+(./sections/abstract.tex) (./Relazione.toc)
 \tf@toc=\write5
 \openout5 = `Relazione.toc'.
 
@@ -2602,26 +2613,26 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42177 strings out of 493304
- 882798 string characters out of 6139871
- 1246404 words of memory out of 5000000
- 44585 multiletter control sequences out of 15000+600000
- 84639 words of font info for 120 fonts, out of 8000000 for 9000
+ 42181 strings out of 493304
+ 882885 string characters out of 6139871
+ 1247394 words of memory out of 5000000
+ 44591 multiletter control sequences out of 15000+600000
+ 100191 words of font info for 125 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  66i,13n,87p,10447b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/texmf/fonts/enc/dvips/tex
--gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/sha
+-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/t
 ype1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qpl
 r.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (13 pages, 470251 bytes).
+Output written on Relazione.pdf (13 pages, 153652 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 155 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
- 32319 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 34874 words of extra memory for PDF output out of 35830 (max. 10000000)
 
