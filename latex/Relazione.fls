@@ -538,8 +538,15 @@ INPUT ./img/testimage.tex
 INPUT ../img/nofloat/../../img/testimage.pdf
 INPUT ../img/nofloat/../../img/testimage.pdf
 INPUT ../img/nofloat/../../img/testimage.pdf
-INPUT sections/chapters/02_Analisi_chapter.tex
-INPUT sections/chapters/02_Analisi_chapter.tex
+INPUT sections/chapters/02_esecuzione.tex
+INPUT sections/chapters/02_esecuzione.tex
+INPUT ./sections/files/esecuzione_esperimento.tex
+INPUT ./sections/files/esecuzione_esperimento.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/eulervm/zeurm10.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT sections/chapters/03_Analisi_chapter.tex
+INPUT sections/chapters/03_Analisi_chapter.tex
 INPUT ./sections/files/analysis/cobalto_analisi.tex
 INPUT ./sections/files/analysis/cobalto_analisi.tex
 INPUT tables/cobalto_risultati.tex
@@ -580,9 +587,6 @@ INPUT ../img/nofloat/../../img/schema_cobalto.tex
 INPUT ../img/nofloat/../../img/schema_cobalto.tex
 INPUT ../img/nofloat/../../img/schema_cobalto.tex
 INPUT ../img/nofloat/../../img/schema_cobalto.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/eulervm/zeurm10.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/eulervm/zeusm10.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eusm10.tfm
@@ -615,8 +619,8 @@ INPUT ./img/testimage.aux
 INPUT ./img/testimage.aux
 INPUT ./Relazione.out
 INPUT ./Relazione.out
-INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
