@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.18)  30 NOV 2016 16:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.18)  30 NOV 2016 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2472,27 +2472,32 @@ l.49 \blankpage
 (./sections/chapters/01_Introduzione.tex)
 (./sections/chapters/02_esecuzione.tex
 (./sections/files/esecuzione_esperimento.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--9
+Underfull \hbox (badness 10000) in paragraph at lines 1--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--27
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--35
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--38
 
  []
 
@@ -2503,7 +2508,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 
+l.38 
       [1])) (./sections/chapters/03_Analisi_chapter.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
@@ -2582,7 +2587,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: BD09B427CFA7CEB46AEF03506F6F33F4;246.
+(rerunfilecheck)             Checksum: 7F4197881D708FA0965328D15DD0C3CC;303.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2593,13 +2598,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42159 strings out of 493304
- 882229 string characters out of 6139871
- 1246013 words of memory out of 5000000
- 44583 multiletter control sequences out of 15000+600000
- 100602 words of font info for 128 fonts, out of 8000000 for 9000
+ 42155 strings out of 493304
+ 882193 string characters out of 6139871
+ 1246094 words of memory out of 5000000
+ 44584 multiletter control sequences out of 15000+600000
+ 100203 words of font info for 125 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 66i,13n,87p,10447b,999s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,13n,87p,10447b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/texmf/fonts/enc/dvips/tex
 -gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/sha
@@ -2609,10 +2614,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/t
 ype1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qpl
 r.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (11 pages, 143578 bytes).
+Output written on Relazione.pdf (11 pages, 143855 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 34861 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 34869 words of extra memory for PDF output out of 35830 (max. 10000000)
 

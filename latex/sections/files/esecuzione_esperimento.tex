@@ -1,37 +1,40 @@
-L'apparato strumentale consiste in una serie di moduli (amplificatori di alto voltaggio, un fan in/out, un amplificatore analogico, una cassetta di ritardi, un CFD e un TAC),
-due scintillatori organici, un oscilloscopio, un ADC e un digitizer. Durante la prima sessione di laboratorio si è preso confidenza con tutte le parti dell'apparato
+L'apparato strumentale consiste di una serie di moduli (amplificatori di alto voltaggio, un fan in/out, un amplificatore analogico, una cassetta di ritardi, un CFTD e un TAC),
+due scintillatori organici di 5 cm ciascuno collegato a un fotomoltiplicatore XP2020,  un oscilloscopio, un ADC ed un digitizer.
+Durante la prima sessione di laboratorio si è preso confidenza con tutte le parti dell'apparato
 strumentale e si è fatta la calibrazione di tale apparato. Come prima cosa si sono collegati i rivelatori al fan in/out e il segnale è stato mandato all'oscilloscopio,
 in modo che fosse possibile vedere il segnale e misurarne ampiezza, tempo di salita e tempo di discesa e rumore. Poi si è ripetuto il procedimento collegando il rivelatore, e si
 sono anche collegati il CFD e il TAC per la prova della misura di tempo. Una volta capito il funzionamento dei vari moduli, si è proceduto con la regolazione della soglia:
-dopo aver collegato tutti i moduli all'oscilloscopio si è visto il segnale del del CFTD in concomitanza con il segnale in uscita direttamente dall'amplificatore: in
-questo modo è stato possibile verificare che non ci fossero falsi eventi, e regolando un trimmer si è regolata dal soglia del CFTD in modo che fosse la più bassa possibile
+dopo aver collegato tutti i moduli all'oscilloscopio si è visto il segnale del CFTD in concomitanza con il segnale in uscita direttamente dall'amplificatore: in
+questo modo è stato possibile verificare che non ci fossero falsi eventi, e regolando un trimmer si è regolata la soglia del CFTD in modo che fosse la più bassa possibile
 ma senza registrare falsi eventi a causa del rumore elettronico. Infine si è preso un file di prova per verificare il corretto funzionamento del sistema di misura.\\
 
-Subito dopo si è passati alla vera e propria calibrazione in energia, per prendere i dati si è impsotato il sistema di acquisizione in modo che triggerasse prima
-sui segnali provenienti dal primo rivelatore e poi su quelli provenienti dal secondo rivelatore. Si sono quindi acquisiti dati per una durata di circa 15 minuti l'uno, che
+Subito dopo si è passati alla vera e propria calibrazione in energia: per prendere i dati si è impostato il sistema di acquisizione in modo che triggherasse singolarmente
+sui segnali provenienti dal primo rivelatore e poi su quelli provenienti dal secondo rivelatore. Si sono quindi acquisiti due campioni di dati per una durata di circa 
+15 minuti l'uno, che
 contenessero entrambe le spalle Compton del decadimento del sodio, da usare per la calibrazione in energia.\\
 
 Durante la seconda sessisone si è passati alla calibrazione in tempo e alla misura del ritardo de cavi forniti. Per farla, si sono prese misure analoghe a quelle prese per la calibrazione in
 energia andando a modificare i ritardi introdotti, e poi si sono studiati i grafici risultanti. Dopodichè si sono misurati i ritardi legati ai cavetti aggiungendoli
-in serie all'uscita della scatola dei ritardi, e si sono presi altri campioni.
+in serie all'uscita della scatola dei ritardi, e si sono presi altri campioni.\\
 
-Successivamente si è passati allo studio della risoluzione temporale in funzione del delay: si è cambiato il cavo del delay interno del CFTD e si sono studiate le
+Successivamente si è passati allo studio della risoluzione temporale in funzione del delay: si è cambiato il cavo del delay utilizzato dal CFTD e si sono studiate le
 risoluzioni al variare della lunghezza di tale cavo, in modo da trovare la lunghezza ottimale per la presa dati successiva. Inoltre, collegando una delle uscite del
-CFTD assieme al CF MONITOR all'oscilloscopio si è modificato il potenziometro WALK ADJ in modo tale che l'intersezione dei segnali bipolari visti sull'oscilloscopio
+CFTD assieme al CF MONITOR all'oscilloscopio si è modificato il trimmer WALK ADJ in modo tale che l'intersezione dei segnali bipolari visti sull'oscilloscopio
 coincidesse con la baseline del segnale stesso, e che quindi la misura di tempo fosse la migliore possibile.\\
 
 Una volta effettuate tutte le calibrazioni e le regolazioni necessarie si è deciso di prendere una misura che potesse dare una stima della risoluzione temporale al
-variare dell'energia, così si è sostituita la sorgente di $^{22}Na$ con una sorgente di $^{60}Co$ (che emette fotoni in coincidenza più energetici, sebbene non collineari)
+variare dell'energia, così si è sostituita la sorgente di $^{22}\text{Na}$ con una sorgente di $^{60}\text{Co}$ (che emette fotoni in coincidenza più energetici, sebbene non collineari)
 e si è verificato che tutte le regolazioni dell'apparato fossero quelle ottimali per prendere una misura che fosse la migliore possibile. Tale misura è stata presa
 nell'intervallo tra la seconda e la terza sessione di laboratorio (è servito un campione più  lungo considerando che i fotoni erano collineari solo come accidente).\\
 
 La terza sessione è stata dedicata alla misura della velocità della luce e all'ulitizzo del sistema di acquisizione digitale. Per misurare la velocità della luce,
-come prima cosa, si è posizionata la sorgente di $^{22}Na$, che decade attraverso due fotoni collineari e si è controllato che tutti i parametri della strumentazione
-(in particolare i ritardi inseriti nella cassetta, il filo del delay del CFTD, la soglia e il Walk Adj) fossero quelli ottimali per la presa dati. Dopodiché
-si è avvicinata la sorgente al rivelatore 1 e triggherando su tale rivelatore si sono osservati i segnali in coincidenza; poi si sono cambiati i valori dell'amplificatore
-e della cassetta dei ritardi per fare in modo che i segnali avessero una alrghezza di circa 150 ns e fossero distanziati circa 40 ns. Settato l'apparato, si è presa una
-misura di circa un'ora con la sorgente vicina al primo rivelatore e un'altra con la sorgente vicina al secondo rivelatore, misurando sempre le distanze tra i rivelatori
-e la sorgente.\\
+come prima cosa, si è posizionata la sorgente di $^{22}\text{Na}$, che decade attraverso due fotoni collineari e si è controllato che tutti i parametri della strumentazione
+(in particolare i ritardi inseriti nella cassetta, il filo del delay del CFTD, la soglia e il Walk Adj) fossero quelli ottimali per la presa dati. Dopodiché si sono allontanati
+i due rivelatori il più possibile e
+si è avvicinata la sorgente al rivelatore 1, triggherando su tale rivelatore si sono osservati i segnali in coincidenza; poi si sono cambiati i valori dell'amplificatore
+e della cassetta dei ritardi per fare in modo che i segnali avessero una larghezza di circa 150 ns e fossero distanziati il più possibile. Settato l'apparato, si è presa una
+misura di circa un'ora con la sorgente vicina al primo rivelatore e un'altra con la sorgente vicina al secondo rivelatore, e si sono misurate le distanze caratteristiche del 
+sistema.\\
 
-Come ultima cosa si è passati al sistema di acquisizione digitale: si sono collegati i cavi del sistema (preimpostato) di acquisizione digitale, si è controllato che
-i rate di acquisizione fossero uguali per ogni canale e si è preso un campione di dati lungo circa una ventina di minuti.
+Come ultima cosa si è passati al sistema di acquisizione digitale: si sono collegati i cavi del sistema (preimpostato) di acquisizione digitale
+e si è preso un campione in uscita dai due rivelatori indipendentemente lungo circa una ventina di minuti.
