@@ -2,6 +2,8 @@
 \select@language {italian}
 \contentsline {section}{\numberline {1}Esecuzione esperimento}{1}{section.1}
 \contentsline {section}{\numberline {2}Analisi Dati}{2}{section.2}
-\contentsline {section}{\numberline {3}Studio della risoluzione temporale al variare dell'energia}{2}{section.3}
-\contentsline {section}{\numberline {4}Velocit\IeC {\`a} della luce}{5}{section.4}
-\contentsline {section}{\numberline {5}appendice test}{8}{section.5}
+\contentsline {subsection}{\numberline {2.1}Analisi preliminare dei segnali}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Calibrazione in Energia}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Calibrazione in Tempo}{5}{section.3}
+\contentsline {section}{\numberline {4}Velocit\IeC {\`a} della luce}{7}{section.4}
+\contentsline {section}{\numberline {5}appendice test}{10}{section.5}

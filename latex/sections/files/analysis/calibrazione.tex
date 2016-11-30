@@ -1,0 +1,107 @@
+%\documentclass[a4paper]{article}
+%\usepackage[italian]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath}
+%\usepackage{float}
+%\usepackage{multirow}
+%\usepackage{multicol}
+%\usepackage{graphicx}
+%\usepackage{siunitx}
+%\usepackage{subcaption}
+%\usepackage{verbatim}
+%\nonstopmode
+
+%\begin{document}
+\subsection{Analisi preliminare dei segnali}
+
+Si riportano i dati ottenuti dall'analisi del segnale del rivelatore direttamente sull'oscilloscopio. Il segnale
+ottenuto è simile per entrambi i rielatori, sono infatti entrambi negativi e presentano le seguenti caratteristiche:\\
+
+%\begin{minipage} [B]{0.49\linewidth}
+%\large{Segnale Rivelatore 1}
+%\( T_{salita} \left(10 \% / 90 \% \right) = (4.4 \pm 0.6) ns \) \\
+%\( T_{discesa} \left(10 \% / 90 \% \right)= (11.2 \pm 0.6) ns \) \\
+%\( Amp = (1.20 \pm 0.03) V  \) \\
+%\end{minipage}
+%\rule[-1.2cm]{0.3mm}{3cm}
+%\begin{minipage} [B]{0.49\linewidth}
+%\large{Segnale Rivelatore 2} 
+%\( T_{salita} \left(10 \% / 90 \% \right)= (3.8 \pm 0.3) ns \) \\
+%\( T_{discesa} \left(10 \% / 90 \% \right)= (10.8 \pm 0.6) ns \) \\
+%\( Amp = (1.16 \pm 0.03) V  \) \\
+%\end{minipage}
+%\vspace{0.5 cm}
+%
+\begin{tabella}[h]
+	\centering
+	\input{tables/calibrazione_iniziali.tex}
+	\caption{Le misure preliminari in uscita dei rivelatori}
+	\label{tab:calib_pre}
+\end{tabella}
+%
+
+Per misuratire i tempi di salita (allontanamento dalla baseline) e di discesa si è misurato il tempo impiegato dal segnale per passare dal 10\% al 90\% dell'ampiezza
+massima per la discesa; gli errori sono stati stimati come semplici errori associati alla lettura da oscilloscopio.\\
+
+%A questo punto si è voluto visualizzare  il segnale bipolare dell'amplificatore ORTEC 855, costituito a sua volta da una moltitudine di segnali di ampiezza variabile, proporzionali
+%all'energia rilasciata dai fotoni nel rivelatore. I segnali di ampiezza massima (non prendendo in considerazione segnali totalmente fuori scala imputabili ad esempio ad eventuali
+%raggi cosmici) sono quelli corrispondenti al Compton Edge del fotone a 1275 KeV. Triggherando con il segnale logico del CFTD di un rivelatore ed osservando l'output bipolare dell'altro,
+%si è invece in grado di vedere gli eventi in coincidenza (fotoni emessi back to back) e di conseguenza i segnali ad ampiezza massima corrispondono al Compton Edge del fotone a 511KeV.
+
+\subsection{Calibrazione in Energia}
+Gli spettri presi presentano i classici Compton edge relativi ai fotoni a 511KeV e 1275KeV riconducibili rispettivamente
+all'annichilazione del positrone prodotto dal decadimento della sorgente di sodio ed un elettrone presente nel materiale e il decadimento gamma del neon. Le due spalle Compton possono
+essere interpolate tramite una gaussiana di cui ci si ricava centroide e sigma. I centroidi non corrispondono però con i Compton edge veri e propri, che valgono
+340KeV e 1062KeV per i due fotoni sopracitati, infatti al crescere della sigma si osserva uno shift verso sinistra dei centroidi relativi alle due spalle Compton
+per effetto della risoluzione finita dello strumento.
+Si può però correlare il parametro adimensionale \(\frac{s}{C}\) con il valore in KeV della sigma e quest'ultima al valore dello shift tramite delle funzioni di 
+risposta, in maniera tale da poter associare al centroide un valore in energia pari a \(E_{\text{centroide}} = E_{\text{CE}} - E_{\text{shift}}\).  Nelle tabelle
+sottostanti si possono leggere i parametri ottenuti interpolando i Compton edge e le conseguenti correzioni del valore in energia dei centroidi\footnote{I grafici
+delle interpolazioni si possono vedere nelle \textit{appendici}.}.
+
+
+%
+\begin{tabella}[h]
+	\centering
+	\input{tables/calibrazione_shift_1.tex}
+	\caption{Procedura calibrazione del rivelatore 1}
+	\label{tab:calib_pre}
+\end{tabella}
+%
+%
+\begin{tabella}[h]
+	\centering
+	\input{tables/calibrazione_shift_2.tex}
+	\caption{Procedura calibrazione del rivelatore 2}
+	\label{tab:calib_pre}
+\end{tabella}
+%
+Avendo quindi due coppie di valori corrispondeti ai due Compton edge, è possibile ottenere un grafico che permette di calibrare gli spettri in energia.
+\input{./graphs/calibenergy_r1}
+\input{./graphs/calibenergy_r2}
+
+\section{Calibrazione in Tempo}
+
+A questo punto si è proceduto con la calibrazione in tempo, acquisendo lo spettro del TAC (CH1 canale dell'mca) avendo settato differenti ritardi tramite 
+un'apposita cassetta dei ritardi o attraverso cavi LEMO di differente lunghezza. Interpolando tali spettri con una Gaussiana si è potuto ottenere nuovamente centroide con relativo 
+errore corrispondenti ai vari ritardi della delay unit (tra i 4ns ed i 30ns) oppure alle varie lunghezze dei cavi avendo impostato un ritardo tramie la casetta pari a 30 ns,
+ed effettuando quindi un'interpolazione lineare. Nelle seguenti tabelle si possono vedere i dati usati per l'interpolazione. \\
+%
+\begin{tabella}[h]
+	\centering
+	\input{tables/calibrazione_delay_unit.tex}
+	\caption{Calibrazione della delay unit}
+	\label{tab:calib_pre}
+\end{tabella}
+%
+%
+\begin{tabella}[h]
+	\centering
+	\input{tables/calibrazione_cavi.tex}
+	\caption{Calibrazione cavi}
+	\label{tab:calib_pre}
+\end{tabella}
+%
+L'interpolazione effettuata si può vedere nei grafici sottostanti sia per l'utiizzo dell cassetta di ritardi che per l'inserimento dei cavi.
+\input{./graphs/CalibTempo}
+\input{./graphs/CalibCavi}
