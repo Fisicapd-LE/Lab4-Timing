@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  1 DEC 2016 16:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  1 DEC 2016 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2671,7 +2671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--1
 
 [7
 
-] [8]
+]
 LaTeX Font Info:    Try loading font information for TS1+qpl on input line 6.
  (/usr/share/texmf/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
@@ -2680,15 +2680,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--14
 
  []
 
-(./img/schema_cobalto.tex (../img/nofloat/../../img/schema_cobalto.tex)
+[8] (./img/schema_cobalto.tex (../img/nofloat/../../img/schema_cobalto.tex)
 File: ../img/nofloat/../../img/schema_cobalto.tex Graphic file (type tex)
 )
-[9]
 Underfull \hbox (badness 10000) in paragraph at lines 47--51
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
@@ -9927,12 +9926,16 @@ Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../graphs/light.tex Graphic file (type tex)
 )
-(./tables/luce_centroidi.tex [10])
+(./tables/luce_centroidi.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
 Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-) (./sections/files/analysis/analisi_digitale.tex [11]
+) (./sections/files/analysis/analisi_digitale.tex [10]
 (./graphs/mean_signal_0.tex (../img/nofloat/../../graphs/mean_signal_0.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -9944,8 +9947,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../graphs/mean_signal_0.tex Graphic file (type tex)
-)
-(./graphs/mean_signal_1.tex (../img/nofloat/../../graphs/mean_signal_1.tex
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./graphs/mean_signal_1.tex (../img/nofloat/../../graphs/mean_signal_1.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -9962,7 +9968,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 
-LaTeX Warning: Reference `gr:fail_retta_interp' on page 12 undefined on input l
+LaTeX Warning: Reference `gr:fail_retta_interp' on page 11 undefined on input l
 ine 10.
 
 (./hist/confronto_ris_temp_digi.tex
@@ -10000,7 +10006,7 @@ tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
+) [11]
 
 LaTeX Warning: Reference `hist:soglia_50' on page 12 undefined on input line 17
 .
@@ -10269,10 +10275,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55938 strings out of 493304
- 1172238 string characters out of 6139871
- 1657915 words of memory out of 5000000
- 58160 multiletter control sequences out of 15000+600000
+ 55921 strings out of 493304
+ 1171935 string characters out of 6139871
+ 1721328 words of memory out of 5000000
+ 58143 multiletter control sequences out of 15000+600000
  129132 words of font info for 136 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  66i,13n,92p,10447b,1021s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -10285,7 +10291,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/t
 ype1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qpl
 r.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (23 pages, 296143 bytes).
+Output written on Relazione.pdf (23 pages, 296291 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
  210 compressed objects within 3 object streams
