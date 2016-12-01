@@ -1,0 +1,11 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Esecuzione esperimento}{1}{section.1}
+\contentsline {section}{\numberline {2}Analisi Dati}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Analisi preliminare dei segnali}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Calibrazione in Energia}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Calibrazione in Tempo}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Studio della risoluzione temporale al variare dell'energia}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Velocit\IeC {\`a} della luce}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Analisi dai dati digitali}{13}{subsection.3.3}
+\contentsline {section}{\numberline {4}appendice test}{16}{section.4}
