@@ -1,0 +1,1 @@
+Segnale medio ottenuto dai segnali misurati nel canale 1 del digitizer

@@ -11,8 +11,13 @@ fi
 
 testo="
 	 \begin{figure}[$float]
-	  \centering
-	   \includegraphics[width=\textwidth]{../../$2}"
+	  \centering"
+if [ $2 =~ tex ] 
+then
+	testo=$testo"\resizebox{\textwidth}{!}{\input{../../$2}}"
+else
+	testo=$testo"\includegraphics[width=\textwidth]{../../$2}"
+fi
 if [ -f ./graphs/$filename.txt ]
 then
 	testo=$testo"\caption{$(cat ./graphs/$filename.txt)}"
