@@ -10,8 +10,12 @@ Tabella bella
 Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra i 4 e i 12 ns e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero cressing si è fatta un interpolazione con una cubica tra i punti di massimo e minimo del segnale di ``CF monitor'', dato che l'interpolazione suggerita con una retta aveva diversi problemi dovuti alla bassa frequenza di campionamento (vedi Fig. \ref{gr:fail_retta_interp}) che davano una distribuzione temporale distorta.
 Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig. \ref{hist:confronto_ris_temp_digi}, mostrando che la risoluzione migliore si ha quando il ritardo è di 4 ns e l'attenuazione è a 0.3. Dato però che questa distribuzione risulta essere leggermente deformata, si è preferito usare l'attenuazione a 0.4, la seconda migliore.
 
-\input{./hist/confronto_ris_temp_digi}
+\input{./hist/confronto_ris_temp_CFTD}
 
 tabella risoluzioni gaussiane
 
-Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, si è applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. da \ref{hist:soglia_50} a \ref{hist:soglia_350}
+Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, si è applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. \ref{hist:confronto_ris_temp_energy}
+
+\input{./hist/confronto_ris_temp_energy}
+
+tabella risoluzioni gaussiane
