@@ -20,12 +20,12 @@ fi
 
 if [ ${2//nolarge} == $2 ]
 then
-	if [ $2 =~ tex ] 
-	then
-	 testo=$testo"\resizebox{\textwidth}{!}{\input{../../$2}}"
-	else
+	#if [ $2 =~ tex ] 
+	#then
+	# testo=$testo"\resizebox{\textwidth}{!}{\input{../../$2}}"
+	#else
 	 testo=$testo"\includegraphics[width=\textwidth]{../../$2}"
-	fi
+	#fi
 else
 	 testo=$testo"\includegraphics{../../$2}"
 fi

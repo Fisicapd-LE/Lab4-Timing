@@ -12,12 +12,12 @@ fi
 testo="
 	 \begin{figure}[$float]
 	  \centering"
-if [ $2 =~ tex ] 
-then
-	testo=$testo"\resizebox{\textwidth}{!}{\input{../../$2}}"
-else
+#if [ $2 =~ tex ] 
+#then
+#	testo=$testo"\resizebox{\textwidth}{!}{\input{../../$2}}"
+#else
 	testo=$testo"\includegraphics[width=\textwidth]{../../$2}"
-fi
+#fi
 if [ -f ./hist/$filename.txt ]
 then
 	testo=$testo"\caption{$(cat ./hist/$filename.txt)}"
