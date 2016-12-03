@@ -661,12 +661,16 @@ INPUT ../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
+INPUT ./tables/cftd_fwhm_digi.tex
+INPUT ./tables/cftd_fwhm_digi.tex
 INPUT ./hist/confronto_ris_temp_energy.tex
 INPUT ./hist/confronto_ris_temp_energy.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_energy.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_energy.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_energy.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_energy.tex
+INPUT ./tables/threshold_fwhm_digi.tex
+INPUT ./tables/threshold_fwhm_digi.tex
 INPUT sections/chapters/PLACEHOLDER.txt
 INPUT sections/chapters/PLACEHOLDER.txt
 INPUT ./sections/appendix.tex

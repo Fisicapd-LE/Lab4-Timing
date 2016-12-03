@@ -12,10 +12,20 @@ Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig
 
 \input{./hist/confronto_ris_temp_CFTD}
 
-tabella risoluzioni gaussiane
+\begin{tabella}[h]
+	\centering
+	\input{./tables/cftd_fwhm_digi}
+	\caption{Risoluzione temporale in funzione di dei parametri delay e attenuazione nell'algoritmo CFTD}
+	\label{tab:cftd_fwhm_digi}
+\end{tabella}
 
 Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, si è applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. \ref{hist:confronto_ris_temp_energy}
 
 \input{./hist/confronto_ris_temp_energy}
 
-tabella risoluzioni gaussiane
+\begin{tabella}[h]
+	\centering
+	\input{./tables/threshold_fwhm_digi}
+	\caption{Risoluzione temporale in funzione di una soglia di energia nelle misure digitali}
+	\label{tab:threshold_fwhm_digi}
+\end{tabella}
