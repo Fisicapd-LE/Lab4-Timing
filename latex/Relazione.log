@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.4)  3 DEC 2016 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.4)  4 DEC 2016 00:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10133,14 +10133,28 @@ File: ../img/nofloat/../../graphs/mean_signal_1.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+) (./graphs/fail_retta_digi.tex
+(../img/nofloat/../../graphs/fail_retta_digi.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/fail_retta_digi.tex Graphic file (type tex)
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
 
-LaTeX Warning: Reference `gr:fail_retta_interp' on page 14 undefined on input l
-ine 10.
-
-
 LaTeX Warning: Reference `hist:confronto_ris_temp_digi' on page 14 undefined on
- input line 11.
+ input line 14.
 
 (./hist/confronto_ris_temp_CFTD.tex
 (../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
@@ -10544,11 +10558,11 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 46582 strings out of 493029
- 1017128 string characters out of 6136234
- 2188686 words of memory out of 5000000
- 48892 multiletter control sequences out of 15000+600000
- 129629 words of font info for 139 fonts, out of 8000000 for 9000
+ 46588 strings out of 493029
+ 1017398 string characters out of 6136234
+ 2317924 words of memory out of 5000000
+ 48894 multiletter control sequences out of 15000+600000
+ 129496 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,13n,103p,10406b,1053s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/shar
@@ -10561,10 +10575,10 @@ xmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/type1
 /public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pf
 b></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (27 pages, 385571 bytes).
+Output written on Relazione.pdf (27 pages, 419640 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  36949 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -655,6 +655,12 @@ INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
 INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
 INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
 INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
+INPUT ./graphs/fail_retta_digi.tex
+INPUT ./graphs/fail_retta_digi.tex
+INPUT ../img/nofloat/../../graphs/fail_retta_digi.tex
+INPUT ../img/nofloat/../../graphs/fail_retta_digi.tex
+INPUT ../img/nofloat/../../graphs/fail_retta_digi.tex
+INPUT ../img/nofloat/../../graphs/fail_retta_digi.tex
 INPUT ./hist/confronto_ris_temp_CFTD.tex
 INPUT ./hist/confronto_ris_temp_CFTD.tex
 INPUT ../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
