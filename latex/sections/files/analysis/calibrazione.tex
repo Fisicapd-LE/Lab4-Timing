@@ -14,7 +14,7 @@
 %\begin{document}
 \subsection{Analisi preliminare dei segnali}
 
-Si riportano i dati ottenuti dall'analisi del segnale del rivelatore direttamente sull'oscilloscopio. Il segnale
+Si riportano i dati ottenuti dall'analisi dei segnali dei rivelatori direttamente sull'oscilloscopio. Il segnale
 ottenuto è simile per entrambi i rivelatori, sono infatti entrambi negativi e presentano le seguenti caratteristiche:\\
 
 %\begin{minipage} [B]{0.49\linewidth}
@@ -41,7 +41,7 @@ ottenuto è simile per entrambi i rivelatori, sono infatti entrambi negativi e p
 %
 
 Per misurare i tempi di salita (allontanamento dalla baseline) e di discesa si è misurato il tempo impiegato dal segnale per passare dal 10\% al 90\% dell'ampiezza
-massima per la discesa; gli errori sono stati stimati come semplici errori associati alla lettura da oscilloscopio.\\
+massima per la discesa e viceversa per la salita; gli errori sono stati stimati come semplici errori associati alla lettura da oscilloscopio.\\
 
 %A questo punto si è voluto visualizzare  il segnale bipolare dell'amplificatore ORTEC 855, costituito a sua volta da una moltitudine di segnali di ampiezza variabile, proporzionali
 %all'energia rilasciata dai fotoni nel rivelatore. I segnali di ampiezza massima (non prendendo in considerazione segnali totalmente fuori scala imputabili ad esempio ad eventuali
@@ -78,7 +78,9 @@ associati alle energie dei Compton edge.
 \end{tabella}
 %
 Avendo quindi due coppie di valori corrispondeti ai due Compton edge, è possibile ottenere un grafico che permette di calibrare gli spettri in energia.
-Essendo i punti a disposizione per ogniuna delle interpolazioni solamente due non si è potuto fornire gli errori relativi ai parametri dell'interpolazione.
+Essendo i punti a disposizione per ogniuna delle interpolazioni solamente due non si è potuto fornire gli errori relativi ai parametri dell'interpolazione. Inoltre per
+trovare i centroidi è stata eseguita la correzione dovuta alla finitezza della risoluzione sopra descritta; dato che questa correzione fa uso di grafici ottenuti
+sperimentalmente senza errori, non si è ritenuto opportuna la stima di errori legati ai parametri di calibrazione.
 
 
 \input{./graphs/calibenergy_r1}
@@ -86,10 +88,10 @@ Essendo i punti a disposizione per ogniuna delle interpolazioni solamente due no
 
 \section{Calibrazione in Tempo}
 
-A questo punto si è proceduto con la calibrazione in tempo, acquisendo lo spettro del TAC (CH1 canale dell'mca) avendo settato differenti ritardi tramite 
+A questo punto si è proceduto con la calibrazione in tempo, acquisendo lo spettro del TAC (CH1 canale dell'MCA) avendo settato differenti ritardi tramite 
 un'apposita cassetta dei ritardi. Interpolando tali spettri con una Gaussiana si è potuto ottenere nuovamente centroide con relativo 
-errore corrispondenti ai vari ritardi della delay unit (tra i 4ns ed i 30ns) ,
-ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i dati usati per l'interpolazione. \\
+errore corrispondenti ai vari ritardi della delay unit (tra i 4 ns ed i 30 ns) ,
+ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione\footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
 %
 \begin{tabella}[h]
 	\centering
@@ -113,16 +115,26 @@ La dipendenza lineare attesa è stata ben riscontrata.
 A seguito di tale calibrazione è stato possibile ricavare il ritardo associato all'inserimento di cavi LEMO tra il Delay e lo stop del TAC ricavando il centroide dai vari spettri del 
 TAC ed associandovi un ritardo ricavato tramite i parametri del precedente fit. La relazione lineare che vede in ascissa i tempi ed i relativi centroidi in ordinata è stata 
 quindi invertita ricavandosi per propagazione gli errori sui nuovi parametri ed ottenendo i seguenti risultati. Il ritardo associato ai cavetti di diversa lunghezza è molto simile
-a quello indicato, la differenza è forse dovuta all'usura o ad effetti strumentali.\\
+a quello indicato, la differenza è forse dovuta ad approssimazioni o ad effetti strumentali.\\
 
-tabella bella che Davide ha\\
+\begin{tabella}[h]
+	\centering
+	\input{tables/extracavi.tex}
+	\caption{Stima del ritardo introdotto dai cavi}
+	\label{tab:calib_cavi}
+\end{tabella}
  
 Infine si è verificato che il delay esterno del CFD che massimizzasse la risoluzione fosse quello di 4ns, ottenuto tramite un apposito cavo LEMO. Si sono confrontati tre diversi cavi
 che determinassero un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamene le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
 è osservato è che il picco con sigma minore era quello relatvo al ritardo da 4ns, determinando quindi la scelta di usare tale cavo per le misure succesive. Di seguito in tabella
-i risultati dei fit gaussiani effettuati sugli spettri. \\
+i risultati dei fit gaussiani in canali effettuati sugli spettri\footnote{Come prima, nelle appendici si possono vedere i grafici delle interpolazioni gaussiane.}. \\
 
-tabella extra che sta nella cartella extra nome walkcrosstabella.txt ahah come sono fantasioso
+\begin{tabella}[h]
+	\centering
+	\input{tables/tabellawalkcross.tex}
+	\caption{Stima del ritardo introdotto dai cavi}
+	\label{tab:calib_cavi}
+\end{tabella}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.4)  7 DEC 2016 01:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.18)  7 DEC 2016 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2245,29 +2245,8 @@ Package: translator 2010/06/12 ver 1.10
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count309
 \c@subtable=\count310
-)
-! Undefined control sequence.
-l.163 \extrafloats
-                  {100}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.163 \extrafloats{1
-                    00}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) (./preambles_and_styles/float_styles.tex
+))
+(./preambles_and_styles/float_styles.tex
 \@float@every@tabella=\toks56
 \c@tabella=\count311
 \@float@every@grafico=\toks57
@@ -2278,7 +2257,11 @@ If that doesn't work, type  X <return>  to quit.
 LaTeX Warning: Unused global option(s):
     [6pt,mathserif].
 
-(./Relazione.aux)
+(./Relazione.aux
+
+LaTeX Warning: Label `tab:calib_cavi' multiply defined.
+
+)
 \openout1 = `Relazione.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -2500,12 +2483,6 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 (./sections/relation_title.tex
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/qpl/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
 Overfull \hbox (37.97852pt too wide) in paragraph at lines 6--6
  []| 
  []
@@ -2524,12 +2501,10 @@ Overfull \hbox (37.97852pt too wide) in paragraph at lines 31--31
  []| 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 \end{titlepage}
-                     [1]) (./sections/abstract.tex) [0] (./Relazione.toc)
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+(./sections/abstract.tex) [0] (./Relazione.toc)
 \tf@toc=\write5
 \openout5 = `Relazione.toc'.
 
@@ -2571,6 +2546,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--38
 
  []
 
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/qpl/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -2643,18 +2621,28 @@ Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../graphs/CalibTempo.tex Graphic file (type tex)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--119
+
+ []
+
+(./tables/extracavi.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 127--131
 
  []
 
 [5
 
-]) (./sections/files/analysis/cobalto_analisi.tex
+] (./tables/tabellawalkcross.tex))
+(./sections/files/analysis/cobalto_analisi.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
 
-(./tables/cobalto_risultati.tex) (./hist/bella_soglia.tex
+[6] (./tables/cobalto_risultati.tex) (./hist/bella_soglia.tex
 (../img/nofloat/../../hist/bella_soglia.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2768,7 +2756,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--27
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -10090,8 +10080,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Reference `hist:confronto_ris_temp_digi' on page 13 undefined on
  input line 14.
 
-(./hist/confronto_ris_temp_CFTD.tex
-(../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex
+(./hist/confronto_ris_temp_CFTD_linear.tex
+(../img/nofloat/../../hist/confronto_ris_temp_CFTD_linear.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -10180,8 +10170,8 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-File: ../img/nofloat/../../hist/confronto_ris_temp_CFTD.tex Graphic file (type 
-tex)
+File: ../img/nofloat/../../hist/confronto_ris_temp_CFTD_linear.tex Graphic file
+ (type tex)
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -10487,7 +10477,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred inside a group at level 1)
@@ -10495,11 +10485,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 67319 strings out of 493304
- 1409515 string characters out of 6139872
- 2144801 words of memory out of 5000000
- 69507 multiletter control sequences out of 15000+600000
- 129568 words of font info for 138 fonts, out of 8000000 for 9000
+ 66113 strings out of 493304
+ 1384341 string characters out of 6139871
+ 1975565 words of memory out of 5000000
+ 68293 multiletter control sequences out of 15000+600000
+ 129435 words of font info for 137 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  66i,13n,92p,10447b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/shar
@@ -10512,10 +10502,10 @@ xmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/type1
 /public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pf
 b></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (27 pages, 417076 bytes).
+Output written on Relazione.pdf (26 pages, 399605 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
  36949 words of extra memory for PDF output out of 42996 (max. 10000000)
 
