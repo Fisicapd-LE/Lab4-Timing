@@ -113,16 +113,9 @@ La dipendenza lineare attesa è stata ben riscontrata.
 A seguito di tale calibrazione è stato possibile ricavare il ritardo associato all'inserimento di cavi LEMO tra il Delay e lo stop del TAC ricavando il centroide dai vari spettri del 
 TAC ed associandovi un ritardo ricavato tramite i parametri del precedente fit. La relazione lineare che vede in ascissa i tempi ed i relativi centroidi in ordinata è stata 
 quindi invertita ricavandosi per propagazione gli errori sui nuovi parametri ed ottenendo i seguenti risultati. Il ritardo associato ai cavetti di diversa lunghezza è molto simile
-a quello indicato, la differenza è forse dovuta all'usura o ad effetti strumentali.\\
+a quello indicato, 
 
 tabella bella che Davide ha\\
  
-Infine si è verificato che il delay esterno del CFD che massimizzasse la risoluzione fosse quello di 4ns, ottenuto tramite un apposito cavo LEMO. Si sono confrontati tre diversi cavi
-che determinassero un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamene le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
-è osservato è che il picco con sigma minore era quello relatvo al ritardo da 4ns, determinando quindi la scelta di usare tale cavo per le misure succesive. Di seguito in tabella
-i risultati dei fit gaussiani effettuati sugli spettri. \\
-
-tabella extra che sta nella cartella extra nome walkcrosstabella.txt ahah come sono fantasioso
-
 
 
