@@ -1,4 +1,4 @@
-PWD /home/davide/Scrivania/git/Lab4-Timing/latex
+PWD /home/davide/git/Lab4-Timing/latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -671,6 +671,8 @@ INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
 INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
 INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
 INPUT ../img/nofloat/../../graphs/mean_signal_1.tex
+INPUT ./tables/calibrazione_iniziali_digit.tex
+INPUT ./tables/calibrazione_iniziali_digit.tex
 INPUT ./graphs/fail_retta_digi.tex
 INPUT ./graphs/fail_retta_digi.tex
 INPUT ../img/nofloat/../../graphs/fail_retta_digi.tex

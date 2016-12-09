@@ -1,0 +1,1 @@
+Risoluzione del TAC al variare della soglia energetica impostata 

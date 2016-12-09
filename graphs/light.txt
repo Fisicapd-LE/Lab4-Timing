@@ -1,0 +1,1 @@
+Confronto tra i dati del TAC nelle due configurazioni (con interpolazione gaussiana dei segnali) 

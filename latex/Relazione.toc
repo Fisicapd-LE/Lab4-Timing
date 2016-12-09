@@ -7,5 +7,8 @@
 \contentsline {section}{\numberline {3}Calibrazione in Tempo}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Studio della risoluzione temporale al variare dell'energia}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Velocit\IeC {\`a} della luce}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Analisi dai dati digitali}{13}{subsection.3.3}
-\contentsline {section}{\numberline {4}appendice test}{17}{section.4}
+\contentsline {subsection}{\numberline {3.3}Analisi dei dati digitali}{13}{subsection.3.3}
+\contentsline {section}{\numberline {4}Appendici}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}Calibrazione in energia}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Calibrazione in tempo}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Misura del tempo di ritardo dei cavetti}{25}{subsection.4.3}
