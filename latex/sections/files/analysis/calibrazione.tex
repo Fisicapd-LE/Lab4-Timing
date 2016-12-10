@@ -32,12 +32,12 @@ ottenuto è simile per entrambi i rivelatori, sono infatti entrambi negativi e p
 %\end{minipage}
 %\vspace{0.5 cm}
 %
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{tables/calibrazione_iniziali.tex}
 	\caption{Le misure preliminari in uscita dei rivelatori}
 	\label{tab:calib_pre}
-\end{tabella}
+\end{table}
 %
 
 Per misurare i tempi di salita (allontanamento dalla baseline) e di discesa si è misurato il tempo impiegato dal segnale per passare dal 10\% al 90\% dell'ampiezza
@@ -62,20 +62,20 @@ associati alle energie dei Compton edge.
 
 
 %
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{tables/calibrazione_shift_1.tex}
 	\caption{Procedura calibrazione del rivelatore 1}
 	\label{tab:calib_shift_1}
-\end{tabella}
+\end{table}
 %
 %
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{tables/calibrazione_shift_2.tex}
 	\caption{Procedura calibrazione del rivelatore 2}
 	\label{tab:calib__shift_2}
-\end{tabella}
+\end{table}
 %
 Avendo quindi due coppie di valori corrispondeti ai due Compton edge, è possibile ottenere un grafico che permette di calibrare gli spettri in energia.
 Essendo i punti a disposizione per ogniuna delle interpolazioni solamente due non si è potuto fornire gli errori relativi ai parametri dell'interpolazione. Inoltre per
@@ -93,12 +93,12 @@ un'apposita cassetta dei ritardi. Interpolando tali spettri con una Gaussiana si
 errore corrispondenti ai vari ritardi della delay unit (tra i 4 ns ed i 30 ns) ,
 ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione\footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
 %
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{tables/calibrazione_delay_unit.tex}
 	\caption{Calibrazione della delay unit}
 	\label{tab:calib_delay}
-\end{tabella}
+\end{table}
 %
 %
 %\begin{tabella}[h]
@@ -117,24 +117,24 @@ TAC ed associandovi un ritardo ricavato tramite i parametri del precedente fit. 
 quindi invertita ricavandosi per propagazione gli errori sui nuovi parametri ed ottenendo i seguenti risultati. Il ritardo associato ai cavetti di diversa lunghezza è molto simile
 a quello indicato, la differenza è forse dovuta ad approssimazioni o ad effetti strumentali.\\
 
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{tables/extracavi.tex}
 	\caption{Stima del ritardo introdotto dai cavi}
 	\label{tab:calib_cavi}
-\end{tabella}
+\end{table}
  
 Infine si è verificato che il delay esterno del CFD che massimizzasse la risoluzione fosse quello di 4ns, ottenuto tramite un apposito cavo LEMO. Si sono confrontati tre diversi cavi
 che determinassero un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamene le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
 è osservato è che il picco con sigma minore era quello relatvo al ritardo da 4ns, determinando quindi la scelta di usare tale cavo per le misure succesive. Di seguito in tabella
 i risultati dei fit gaussiani in canali effettuati sugli spettri\footnote{Come prima, nelle appendici si possono vedere i grafici delle interpolazioni gaussiane.}. \\
 
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{tables/tabellawalkcross.tex}
 	\caption{Stima del ritardo introdotto dai cavi}
 	\label{tab:calib_cavi}
-\end{tabella}
+\end{table}
 
 
 
