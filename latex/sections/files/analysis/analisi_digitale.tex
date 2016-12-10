@@ -7,9 +7,9 @@ Per prima cosa è stato ricavato un segnale medio per canale, ottenendo così te
 
 \begin{tabella}[h]
 	\centering
-	\input{./tables/calibrazione_iniziali_digit}
+	\input{./tables/signal_shape}
 	\caption{Parametri del segnale medio acquisito in ogni canale}
-	\label{tab:calibrazione_iniziali_digit}
+	\label{tab:signal_shape}
 \end{tabella}
 
 Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra i 4 e i 12 ns e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero crossing si è fatta un interpolazione con una cubica tra i punti di massimo e minimo del segnale di ``CF monitor'', dato che l'interpolazione suggerita con una retta aveva diversi problemi dovuti alla bassa frequenza di campionamento (vedi Fig. \ref{gr:fail_retta_digi}) che davano una distribuzione temporale distorta.
