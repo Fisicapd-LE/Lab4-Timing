@@ -1,0 +1,1 @@
+Sovrapposizione delle distribuzioni ottenute dall'analisi del campione al variare dei paramentri inseriti nell'algoritmo CFTD. Le distribuzioni sono state normalizzate in modo che il valore massimo sia 1.

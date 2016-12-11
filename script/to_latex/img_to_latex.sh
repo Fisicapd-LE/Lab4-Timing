@@ -24,7 +24,7 @@ then
 	#then
 	# testo=$testo"\resizebox{\textwidth}{!}{\input{../../$2}}"
 	#else
-	 testo=$testo"\includegraphics[width=\textwidth]{../../$2}"
+	 testo=$testo"\includegraphics[width=0.9\textwidth]{../../$2}"
 	#fi
 else
 	 testo=$testo"\includegraphics{../../$2}"

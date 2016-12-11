@@ -5,35 +5,35 @@ Per prima cosa è stato ricavato un segnale medio per canale, ottenendo così te
 \input{./graphs/mean_signal_0}
 \input{./graphs/mean_signal_1}
 
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{./tables/signal_shape}
 	\caption{Parametri del segnale medio acquisito in ogni canale}
 	\label{tab:signal_shape}
-\end{tabella}
+\end{table}
 
-Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra i 4 e i 12 ns e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero crossing si è fatta un interpolazione con una cubica tra i punti di massimo e minimo del segnale di ``CF monitor'', dato che l'interpolazione suggerita con una retta aveva diversi problemi dovuti alla bassa frequenza di campionamento (vedi Fig. \ref{gr:fail_retta_digi}) che davano una distribuzione temporale distorta.
+Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra i 4 e i 12 ns e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero crossing si è fatta un interpolazione retta tra i punti di zero crossing nel segnale di ``CF monitor''. A causa della bassa frequenza di campionamento, lo zero crossing misurato presenta un errore dipendente dal momento di inizio del campionamento (vedi Fig. \ref{gr:fail_retta_digi}), e presenta perciò una distribuzione non gaussiana.
 
 \input{./graphs/fail_retta_digi}
 
-Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig. \ref{hist:confronto_ris_temp_CFTD_linear}, mostrando che la risoluzione migliore si ha quando il ritardo è di 4 ns e l'attenuazione è a 0.3. Dato però che questa distribuzione risulta essere leggermente deformata, si è preferito usare l'attenuazione a 0.4, la seconda migliore.
+Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig. \ref{hist:confronto_ris_temp_CFTD_linear}, e i loro paramentri sono mostrati in Tab. \ref{tab:cftd_fwhm_digi}. Dalla tabella si può vedere come la distribuzione che più si avvicina ad una gaussiana (ovvero quella con un $\chi^2$ minore) è quella con ritardo 2 e attenuazione 0.8. Questi sono stati i parametri usati nelle seguenti analisi.
 
 \input{./hist/confronto_ris_temp_CFTD_linear}
 
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{./tables/cftd_fwhm_digi}
 	\caption{Risoluzione temporale in funzione di dei parametri delay e attenuazione nell'algoritmo CFTD}
 	\label{tab:cftd_fwhm_digi}
-\end{tabella}
+\end{table}
 
 Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, si è applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. \ref{hist:confronto_ris_temp_energy}
 
 \input{./hist/confronto_ris_temp_energy}
 
-\begin{tabella}[h]
+\begin{table}[h]
 	\centering
 	\input{./tables/threshold_fwhm_digi}
 	\caption{Risoluzione temporale in funzione di una soglia di energia nelle misure digitali}
 	\label{tab:threshold_fwhm_digi}
-\end{tabella}
+\end{table}

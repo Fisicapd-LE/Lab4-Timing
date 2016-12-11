@@ -1,0 +1,1 @@
+Confronto delle distribuzioni ottenute analizzando gli eventi al di sotto di una certa soglia di energia. Le distribuzioni sono state normalizzate in modo che il valore massimo sia 1.

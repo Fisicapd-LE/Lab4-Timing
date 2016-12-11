@@ -1,0 +1,1 @@
+Simulazione di un evento (con un modello log-normale) campionato in due modi diversi a 250 MHz. Come si può vedere, a seconda del momento di inizio del campionamento, l'istante di zero-crossing si sposta in avanti o indietro.
