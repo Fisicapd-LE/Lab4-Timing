@@ -89,7 +89,7 @@ sperimentalmente senza errori, non si è ritenuto opportuna la stima di errori l
 \section{Calibrazione in Tempo}
 
 A questo punto si è proceduto con la calibrazione in tempo, acquisendo lo spettro del TAC (CH1 canale dell'MCA) avendo settato differenti ritardi tramite 
-un'apposita cassetta dei ritardi. Interpolando tali spettri con una Gaussiana si è potuto ottenere nuovamente centroide con relativo 
+un'apposita cassetta dei ritardi. Interpolando tali spettri con una gaussiana si è potuto ottenere nuovamente centroide con relativo 
 errore corrispondenti ai vari ritardi della delay unit (tra i 4 ns ed i 30 ns) ,
 ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione\footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
 %
@@ -117,6 +117,8 @@ TAC ed associandovi un ritardo ricavato tramite i parametri del precedente fit. 
 quindi invertita ricavandosi per propagazione gli errori sui nuovi parametri ed ottenendo i seguenti risultati. Il ritardo associato ai cavetti di diversa lunghezza è molto simile
 a quello indicato, la differenza è forse dovuta ad approssimazioni o ad effetti strumentali.\\
 
+\input{./graphs/tempo_cavi}
+
 \begin{table}[h]
 	\centering
 	\input{tables/extracavi.tex}
@@ -125,7 +127,7 @@ a quello indicato, la differenza è forse dovuta ad approssimazioni o ad effetti
 \end{table}
  
 Infine si è verificato che il delay esterno del CFD che massimizzasse la risoluzione fosse quello di 4ns, ottenuto tramite un apposito cavo LEMO. Si sono confrontati tre diversi cavi
-che determinassero un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamene le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
+che determinassero un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamente le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
 è osservato è che il picco con sigma minore era quello relatvo al ritardo da 4ns, determinando quindi la scelta di usare tale cavo per le misure succesive. Di seguito in tabella
 i risultati dei fit gaussiani in canali effettuati sugli spettri\footnote{Come prima, nelle appendici si possono vedere i grafici delle interpolazioni gaussiane.}. \\
 

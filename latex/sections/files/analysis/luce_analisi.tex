@@ -18,16 +18,16 @@ Con tali ipotesi, si considerino le misure di lunghezze con la seguente notazion
 \item $x_1$ indica la distanza tra la placca in piombo più vicina e il rivelatore 1
 \item $\delta_1$ indica lo spessore della placca in piombo più vicina al rivelatore 1
 \end{itemize}
-E analoga notazione per quanto riguarda il rivelatore 2. In poche parole le ipotesi fatte consistono nel fatto che $R_1=R_2$ e che questi valori si possono prendere
+E analoga notazione per quanto riguarda il rivelatore 2. In poche parole le ipotesi fatte consistono nel fatto che i valori di $R_1$ $R_2$ si possono prendere
 come esatti.\footnote{In realtà, questa ipotesi viene verificata nel limite delle infinite misure; dato che il campione preso è sufficientemente grande, si suppone essa sia
-valida}\\
+valida}, mentre l'ipotesi di sorgente puntiforme è necessaria per ridurre il problema in tre dimensioni a un problema unidimensionale.\\
 \input{./img/schema_cobalto}
 
-A questo punto, se la configurazione è la A, si possono descrivere i tempi di percorrenza dei fotoni prima che vengano rivelati come\footnote:
+A questo punto, se la configurazione è la A, si possono descrivere i tempi di percorrenza dei fotoni prima che vengano rivelati come:
 $$
   t_{1A} = \frac{\delta_1 + nR_1}{c} \hspace{2cm} t_{2A} = \frac{\delta_2 + x_2 + nR_2}{c}
 $$
-Ove $n$ indica il coefficiente di rigrazione all'interno del rivelatore stesso. Quindi il TAC rivelerà l'intervallo temporale:
+Ove $n$ indica un eventuale coefficiente di rifrazione all'interno del rivelatore stesso. Quindi il TAC rivelerà l'intervallo temporale:
 $$
   \delta t_A = t_{2A} - t_{1A} = \frac{\delta_2 + x_2 + nR_2-\delta_1-nR_1}{c}
 $$
@@ -47,7 +47,7 @@ $$
 $$
 Perciò per stimare la velocità della luce è sufficiente andare a misurare la distanza dei due rivelatori a meno delle placche di piombo e la distanza temporale tra i due
 picchi nei grafici calibrati del TAC. Però, in sede di esecuzione dell'esperimento, non si è effettivamente misurata quella distanza ma solamente le distanze tra la sorgente
-e i rivelatori nelle due configurazioni, quindi si ha una stima di $\delta$ e una stima di $ 2 * \delta + x$ per i due casi.\\
+e i rivelatori nelle due configurazioni, quindi si ha una stima di $\delta$ e una stima di $ 2 \delta + x$ per i due casi.\\
 
 Si venga alla vera e propria analisi dati: si vuole applicare la formula, appena dimostrata:
 $$
@@ -68,14 +68,14 @@ $$
 $$
 \\
 
-SOra si pensi al denominatore dell'equazione per la velocità della luce, cioè la differenza tra le distanze temporali nelle due diverse configurazioni dell'esperimento.
+Ora si pensi al denominatore dell'equazione per la velocità della luce, cioè la differenza tra le distanze temporali nelle due diverse configurazioni dell'esperimento.
 Si riscriva tenendo conto della calibrazione:
 $$
   \Delta t = \Delta t_A - \Delta t_B = m\Delta t_A + q - m\Delta t_B - q = m (\Delta t_A - \Delta t_B) 
 $$
 Ove $m,q$, sono i coefficienti della calibrazione stimati nelle sezioni precedenti. I due picchi si possono vedere, già calibrati, nella figura sottostante.\\
 \input{./graphs/light}
-Nonostante questa figura sia utile da vedere in quanto calibrata, è necessario operare con i centroidi non calibrati se si vuole avere un'analisi che tengo conto anche
+Nonostante questa figura sia utile da vedere in quanto calibrata, è necessario operare con i centroidi non calibrati se si vuole avere un'analisi che tenga conto anche
 della correlazione degli errori di calibrazione. Quindi, nella tabella sottostante, si riportano i valori dei centroidi sia prima della calibrazione (quindi in canali)
 che dopo la calibrazione (e quindi in nanosecondi), con gli errori presentati come errori sui parametri dell'interpolazione fatta:
 \input{tables/luce_centroidi}
