@@ -80,6 +80,9 @@ della correlazione degli errori di calibrazione. Quindi, nella tabella sottostan
 che dopo la calibrazione (e quindi in nanosecondi), con gli errori presentati come errori sui parametri dell'interpolazione fatta:
 \input{tables/luce_centroidi}
 
+In questi dati l'errore sul centroide in secondi è stato preso interpolando i dati una volta fatta la calibrazione, quindi non tenendo conto degli errori nei parametri
+di calibrazione, che sarebbero errori agli ordini superiori. Tale problema non è così importante in quanto questi dati si presentano solo per completezza, non vengono in
+alcun caso usati per l'effettivo calcolo della velocità della luce, hanno il solo scopo di presentare un plausibile errore da associare alla misura di tempo.
 
 Presentati questi dati, è possibile passare alla vera e propria stima della velocità della luce, alla quale è ovviamente necessario associare un errore. Dati i preamboli
 fatti, si può considerare la formula (espansa in modo da risolvere i problemi di correlazione, perciò è possibile ottenere l'errore tramite semplice propagazione
