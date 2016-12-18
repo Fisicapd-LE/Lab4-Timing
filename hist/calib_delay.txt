@@ -1,0 +1,1 @@
+Spettri della misura della differenza di temppo tra i due rivelatori al variare del ritardo nominale imposatato con la cassetta dei ritardi. Lo spettro non è stato calibrato per far vedere la corrispondeza canale/tempo.

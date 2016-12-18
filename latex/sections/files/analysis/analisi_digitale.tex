@@ -27,7 +27,12 @@ Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig
 	\label{tab:cftd_fwhm_digi}
 \end{table}
 
-Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, si è applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. \ref{hist:confronto_ris_temp_energy}
+Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Per farlo, è stata fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, ovvero assumendo che il compton edge nello spettro digitale avesse lo stesso shift di quello analogico (approssimazione sensata in quanto lo spostamento del CE dipende dalla risoluzione del rivelatore e non dello strumento di acquisizione). Gli spettri ottenuti sono mostrati in Fig \ref{hist:spectrum_digi_ch0} e \ref{hist:spectrum_digi_ch0}. Si è poi applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. \ref{hist:confronto_ris_temp_energy}
+
+\input{./hist/spectrum_digi_ch0}
+
+\input{./hist/spectrum_digi_ch1}
+
 
 \input{./hist/confronto_ris_temp_energy}
 
