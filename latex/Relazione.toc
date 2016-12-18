@@ -6,10 +6,10 @@
 \contentsline {subsection}{\numberline {2.2}Calibrazione in Energia}{2}{subsection.2.2}
 \contentsline {section}{\numberline {3}Calibrazione in Tempo}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Studio della risoluzione temporale al variare dell'energia}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Velocit\IeC {\`a} della luce}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Analisi dei dati digitali}{13}{subsection.3.3}
-\contentsline {section}{\numberline {4}Conclusioni}{18}{section.4}
-\contentsline {section}{\numberline {5}Appendici}{18}{section.5}
-\contentsline {subsection}{\numberline {5.1}Calibrazione in energia}{18}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Calibrazione in tempo}{21}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Misura del tempo di ritardo dei cavetti}{25}{subsection.5.3}
+\contentsline {subsection}{\numberline {3.2}Velocit\IeC {\`a} della luce}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Analisi dei dati digitali}{14}{subsection.3.3}
+\contentsline {section}{\numberline {4}Conclusioni}{20}{section.4}
+\contentsline {section}{\numberline {5}Appendici}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Calibrazione in energia}{20}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Calibrazione in tempo}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Misura del tempo di ritardo dei cavetti}{27}{subsection.5.3}

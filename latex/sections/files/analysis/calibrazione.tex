@@ -91,7 +91,9 @@ sperimentalmente senza errori, non si è ritenuto opportuna la stima di errori l
 A questo punto si è proceduto con la calibrazione in tempo, acquisendo lo spettro del TAC (CH1 canale dell'MCA) avendo settato differenti ritardi tramite 
 un'apposita cassetta dei ritardi. Interpolando tali spettri con una gaussiana si è potuto ottenere nuovamente centroide con relativo 
 errore corrispondenti ai vari ritardi della delay unit (tra i 4 ns ed i 30 ns) ,
-ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione\footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
+ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione. Si presenta qui per brevità solo un grafico contenente tutti gli spettri insieme privi di fit (Fig \ref{hist:calib_delay}). \footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
+
+\input{./hist/calib_delay}
 %
 \begin{table}[h]
 	\centering
@@ -135,7 +137,7 @@ i risultati dei fit gaussiani in canali effettuati sugli spettri\footnote{Come p
 	\centering
 	\input{tables/tabellawalkcross.tex}
 	\caption{Stima del ritardo introdotto dai cavi}
-	\label{tab:calib_cavi}
+	\label{tab:calib_walkcross}
 \end{table}
 
 
