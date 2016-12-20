@@ -49,13 +49,13 @@ massima per la discesa e viceversa per la salita; gli errori sono stati stimati 
 %si è invece in grado di vedere gli eventi in coincidenza (fotoni emessi back to back) e di conseguenza i segnali ad ampiezza massima corrispondono al Compton Edge del fotone a 511KeV.
 
 \subsection{Calibrazione in Energia}
-Gli spettri presi presentano i classici Compton edge relativi ai fotoni a 511KeV e 1275KeV riconducibili rispettivamente
+Gli spettri presi presentano i classici Compton edge relativi ai fotoni a 511 keV e 1275 keV riconducibili rispettivamente
 all'annichilazione del positrone prodotto dal decadimento della sorgente di sodio ed un elettrone presente nel materiale ed il decadimento gamma del neon. Le due spalle Compton possono
-essere interpolate tramite una gaussiana di cui ci si ricava centroide e sigma. I centroidi non corrispondono però con i Compton edge veri e propri, che valgono
-340KeV e 1062KeV per i due fotoni sopracitati: infatti al crescere della sigma si osserva uno shift verso sinistra dei centroidi relativi alle due spalle Compton
+essere interpolate tramite una gaussiana di cui ci si ricava centroide e sigma. I centroidi non corrispondono però ai Compton edge veri e propri, che valgono
+340 keV e 1062 keV per i due fotoni sopracitati: infatti al crescere della sigma si osserva uno shift verso sinistra dei centroidi relativi alle due spalle Compton
 per effetto della risoluzione finita dello strumento. \\
-Si può però correlare il parametro adimensionale \(\frac{s}{C}\) con il valore in KeV della sigma e quest'ultima al valore dello shift tramite delle funzioni di 
-risposta, in maniera tale da poter associare al centroide un valore in energia pari a \(E_{\text{centroide}} = E_{\text{CE}} - E_{\text{shift}}\).  Nelle tabelle
+Si può però correlare il parametro adimensionale \(\frac{s}{C}\) del fit con il valore in keV della sigma e quest'ultima al valore dello shift tramite delle funzioni di 
+risposta tabulate, in maniera tale da poter associare al centroide un valore in energia pari a \(E_{\text{centroide}} = E_{\text{CE}} - E_{\text{shift}}\).  Nelle tabelle
 sottostanti si possono leggere i parametri ottenuti interpolando i Compton edge e le conseguenti correzioni del valore in energia dei centroidi\footnote{I grafici
 delle interpolazioni si possono vedere nelle \textit{appendici}.}. Poichè questa procedura è stata effettuata a mano non è stato possibile fare una stima degli errori 
 associati alle energie dei Compton edge.
@@ -77,23 +77,22 @@ associati alle energie dei Compton edge.
 	\label{tab:calib__shift_2}
 \end{table}
 %
-Avendo quindi due coppie di valori corrispondeti ai due Compton edge, è possibile ottenere un grafico che permette di calibrare gli spettri in energia.
-Essendo i punti a disposizione per ogniuna delle interpolazioni solamente due non si è potuto fornire gli errori relativi ai parametri dell'interpolazione. Inoltre per
-trovare i centroidi è stata eseguita la correzione dovuta alla finitezza della risoluzione sopra descritta; dato che questa correzione fa uso di grafici ottenuti
-sperimentalmente senza errori, non si è ritenuto opportuna la stima di errori legati ai parametri di calibrazione.
+Avendo quindi due coppie di valori corrispondeti ai due Compton edge, è possibile ottenere un grafico che permetta di calibrare gli spettri in energia.
+Essendo i punti a disposizione per ognuna delle interpolazioni solamente due e dato che ai loro valori non si possono associare degli errori a causa della finitezza della risoluzione, non si è potuto fornire gli errori relativi ai parametri dell'interpolazione.
 
 
 \input{./graphs/calibenergy_r1}
 \input{./graphs/calibenergy_r2}
 
 \input{./graphs/spettro_analog}
+\input{./graphs/spettro_2}
 
 \section{Calibrazione in Tempo}
 
 A questo punto si è proceduto con la calibrazione in tempo, acquisendo lo spettro del TAC (CH1 canale dell'MCA) avendo settato differenti ritardi tramite 
-un'apposita cassetta dei ritardi. Interpolando tali spettri con una gaussiana si è potuto ottenere nuovamente centroide con relativo 
-errore corrispondenti ai vari ritardi della delay unit (tra i 4 ns ed i 30 ns) ,
-ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione. Si presenta qui per brevità solo un grafico contenente tutti gli spettri insieme privi di fit (Fig \ref{hist:calib_delay}). \footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
+un'apposita cassetta dei ritardi. Interpolando tali spettri con una gaussiana si è potuto ottenere nuovamente il centroide con relativo 
+errore corrispondenti ai vari ritardi della delay unit (tra i 4 ns ed i 30 ns),
+si è effettuata quindi un'interpolazione lineare. Nella Tabella \ref{tab:calib_delay} si possono vedere i risultati dell'interpolazione gaussiana usati per la calibrazione. Si presenta qui per brevità solo un grafico contenente tutti gli spettri insieme privi di fit (Fig \ref{hist:calib_delay}). %\footnote{i singoli grafici di interpolazione gaussiana possono essere visti in Appendice.}. \\
 
 \input{./hist/calib_delay}
 %
@@ -116,9 +115,8 @@ ed effettuando quindi un'interpolazione lineare. Nella seguente tabella si posso
 %\input{./graphs/CalibCavi}
 
 La dipendenza lineare attesa è stata ben riscontrata.
-A seguito di tale calibrazione è stato possibile ricavare il ritardo associato all'inserimento di cavi LEMO tra il Delay e lo stop del TAC ricavando il centroide dai vari spettri del 
-TAC ed associandovi un ritardo ricavato tramite i parametri del precedente fit. La relazione lineare che vede in ascissa i tempi ed i relativi centroidi in ordinata è stata 
-quindi invertita ricavandosi per propagazione gli errori sui nuovi parametri ed ottenendo i seguenti risultati. Il ritardo associato ai cavetti di diversa lunghezza è molto simile
+A seguito di tale calibrazione è stato possibile ricavare il ritardo associato all'inserimento di cavi LEMO tra il Delay e lo stop del TAC trovando il centroide corrispondente in canali ed associandovi un ritardo ricavato in tempo tramite i parametri del precedente fit. La relazione lineare che vede in ascissa i tempi ed i relativi centroidi in ordinata è stata 
+quindi invertita ricavandosi per propagazione gli errori sui nuovi parametri ed i risultati si possono vedere nella \ref{tab:calib_cavi}. Il ritardo associato ai cavetti di diversa lunghezza è molto simile
 a quello indicato, la differenza è forse dovuta ad approssimazioni o ad effetti strumentali.\\
 
 \input{./graphs/tempo_cavi}
@@ -130,9 +128,9 @@ a quello indicato, la differenza è forse dovuta ad approssimazioni o ad effetti
 	\label{tab:calib_cavi}
 \end{table}
  
-Infine si è verificato che il delay esterno del CFD che massimizzasse la risoluzione fosse quello di 4ns, ottenuto tramite un apposito cavo LEMO. Si sono confrontati tre diversi cavi
-che determinassero un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamente le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
-è osservato è che il picco con sigma minore era quello relatvo al ritardo da 4ns, determinando quindi la scelta di usare tale cavo per le misure succesive. Di seguito in tabella
+Infine si è verificato che il delay esterno del CFTD che massimizzasse la risoluzione fosse quello di 4ns, ottenuto tramite un apposito cavo LEMO. Si sono confrontati tre diversi cavi
+tabulati per determinare un ritardo da 3ns, 4ns e 5ns acquisendo lo spettro del TAC e limitandosi a confrontare solamente le sigma essendo i centroidi sostanzialmente uguali. Ciò che si 
+è osservato è che il picco con sigma minore era quello relatvo al ritardo da 4ns, determinando quindi la scelta di usare tale cavo per le misure succesive. Nella Tabella \ref{tab:calib_walkcross}
 i risultati dei fit gaussiani in canali effettuati sugli spettri\footnote{Come prima, nelle appendici si possono vedere i grafici delle interpolazioni gaussiane.}. \\
 
 \begin{table}[h]

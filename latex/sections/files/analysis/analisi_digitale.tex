@@ -1,6 +1,8 @@
 \subsection{Analisi dei dati digitali}
 Si è usato il campione preso con il digitizer per fare un confronto tra le misure prese con l'apparato analogico e quelle prese digitalmente.\\
-Per prima cosa è stato ricavato un segnale medio per canale, ottenendo così tempo di salita, di discesa e ampiezza media. I due grafici ottenuti sono mostrati in Fig. \ref{gr:mean_signal_0} e Fig. \ref{gr:mean_signal_1}
+Per prima cosa è stato ricavato un segnale medio per canale, ottenendo così tempo di salita, di discesa e ampiezza media. I due grafici ottenuti sono mostrati in Figura \ref{gr:mean_signal_0} e Figura \ref{gr:mean_signal_1}. Nella Tabella \ref{tab:signal_shape} si possono vedere i valori che caratterizzano il segnale; tali
+valori sono stati ottenuti mediando le singole misure effettuate segnale per segnale e sono diversi da quelli analogici sia perché questo studio è stato fatto in maniera
+diversa rispetto a quello analogico, sia perché il tempo di campionamento del digitizer è confrontabile con il tempo di salita del segnale.\\
 
 \input{./graphs/mean_signal_0}
 \input{./graphs/mean_signal_1}
@@ -12,11 +14,11 @@ Per prima cosa è stato ricavato un segnale medio per canale, ottenendo così te
 	\label{tab:signal_shape}
 \end{table}
 
-Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra i 4 e i 12 ns e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero crossing si è fatta un interpolazione retta tra i punti di zero crossing nel segnale di ``CF monitor''. A causa della bassa frequenza di campionamento, lo zero crossing misurato presenta un errore dipendente dal momento di inizio del campionamento (vedi Fig. \ref{gr:fail_retta_digi}), e presenta perciò una distribuzione non gaussiana.
+Filtrando dal campione solo gli eventi in coincidenza (presa contando gli eventi il cui time tag differisse meno di 100 ns), si è poi fatta un'analisi della risoluzione temporale dell'apparato digitale. Per le misure di tempo si è usato un algoritmo simile al CFTD analogico, facendo variare il ritardo tra l'uno ed i 3 bin ( tra 4 e 12 ns) e l'attenuazione tra lo 0.2 e lo 0.8. Per la ricerca del punto di zero crossing si è fatta un interpolazione retta tra i punti di zero crossing nel segnale di "F MONITOR". A causa della bassa frequenza di campionamento, lo zero crossing misurato presenta un errore dipendente dal momento di inizio del campionamento (vedi Figura \ref{gr:fail_retta_digi}) e presenta perciò una distribuzione non gaussiana.\\
 
 \input{./graphs/fail_retta_digi}
 
-Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig. \ref{hist:confronto_ris_temp_CFTD_linear}, e i loro paramentri sono mostrati in Tab. \ref{tab:cftd_fwhm_digi}. Dalla tabella si può vedere come la distribuzione che più si avvicina ad una gaussiana (ovvero quella con un $\chi^2$ minore) è quella con ritardo 2 e attenuazione 0.8. Questi sono stati i parametri usati nelle seguenti analisi.
+Le distribuzioni ottenute al variare dei parametri sono state sovrapposte nella Figura \ref{hist:confronto_ris_temp_CFTD_linear} ed i loro paramentri sono mostrati in Tabella \ref{tab:cftd_fwhm_digi}. Dalla tabella si può vedere come la distribuzione che più si avvicina ad una gaussiana (ovvero quella con un $\chi^2$ minore) è quella con ritardo 2 bin e attenuazione 0.8. Questi sono stati i parametri usati nelle analisi successive.\\
 
 \input{./hist/confronto_ris_temp_CFTD_linear}
 
@@ -27,7 +29,7 @@ Le distribuzioni ottenute al variare dei parametri sono state sovrapposte in Fig
 	\label{tab:cftd_fwhm_digi}
 \end{table}
 
-Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Per farlo, è stata fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, ovvero assumendo che il compton edge nello spettro digitale avesse lo stesso shift di quello analogico (approssimazione sensata in quanto lo spostamento del CE dipende dalla risoluzione del rivelatore e non dello strumento di acquisizione). Gli spettri ottenuti sono mostrati in Fig \ref{hist:spectrum_digi_ch0} e \ref{hist:spectrum_digi_ch0}. Si è poi applicato l'algoritmo agli eventi con un energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Fig. \ref{hist:confronto_ris_temp_energy}
+Una volta ottimizzato il CFTD, si è proceduto ad analizzare la risoluzione temporale in funzione di una soglia in energia. Per farlo, è stata fatta una calibrazione dei canali approssimativa sovrapponendo lo spettro totale (privo di coincidenza) con lo spettro ottenuto analogicamente, ovvero assumendo che il compton edge nello spettro digitale avesse lo stesso shift di quello analogico (approssimazione sensata in quanto lo spostamento del CE dipende dalla risoluzione del rivelatore e non dello strumento di acquisizione). Gli spettri ottenuti sono mostrati in Figura \ref{hist:spectrum_digi_ch0} e \ref{hist:spectrum_digi_ch1}. Si è poi applicato l'algoritmo agli eventi con un'energia minore di una di una soglia, variabile tra i 50 e i 350 keV. Le distribuzioni ottenute sono in Figura \ref{hist:confronto_ris_temp_energy}.\\
 
 \input{./hist/spectrum_digi_ch0}
 

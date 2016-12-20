@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.28)  18 DEC 2016 16:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.18)  20 DEC 2016 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2523,22 +2523,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--38
+Underfull \hbox (badness 10000) in paragraph at lines 29--37
 
  []
 
@@ -2549,7 +2549,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 
+l.37 
       [1])) (./sections/chapters/03_Analisi_chapter.tex
 (./sections/files/analysis/calibrazione.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--19
@@ -2614,12 +2614,24 @@ File: ../img/nofloat/../../graphs/spettro_analog.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 93--97
+) (./graphs/spettro_2.tex (../img/nofloat/../../graphs/spettro_2.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+File: ../img/nofloat/../../graphs/spettro_2.tex Graphic file (type tex)
 
- []
 
-(./hist/calib_delay.tex (../img/nofloat/../../hist/calib_delay.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [3] [4] [5] (./hist/calib_delay.tex
+(../img/nofloat/../../hist/calib_delay.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2670,7 +2682,7 @@ File: ../img/nofloat/../../graphs/CalibTempo.tex Graphic file (type tex)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
 
  []
 
@@ -2692,7 +2704,7 @@ File: ../img/nofloat/../../graphs/tempo_cavi.tex Graphic file (type tex)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./tables/extracavi.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 133--137
+Underfull \hbox (badness 10000) in paragraph at lines 131--135
 
  []
 
@@ -2842,14 +2854,18 @@ File: ../img/nofloat/../../img/schema_cobalto.tex Graphic file (type tex)
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 47--51
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
+
+
+LaTeX Warning: Reference `hist:luce_centroidi' on page 14 undefined on input li
+ne 77.
 
 (./graphs/light.tex (../img/nofloat/../../graphs/light.tex
 Missing character: There is no ; in font nullfont!
@@ -10085,16 +10101,29 @@ Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../graphs/light.tex Graphic file (type tex)
 )
+
+LaTeX Warning: Reference `tab:luce_centroidi' on page 14 undefined on input lin
+e 80.
+
 (./tables/luce_centroidi.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14])
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
 
-) (./sections/files/analysis/analisi_digitale.tex [15]
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+[15]) (./sections/files/analysis/analisi_digitale.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
+
+ []
+
 (./graphs/mean_signal_0.tex (../img/nofloat/../../graphs/mean_signal_0.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -10118,7 +10147,12 @@ File: ../img/nofloat/../../graphs/mean_signal_1.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./tables/signal_shape.tex) (./graphs/fail_retta_digi.tex
+) (./tables/signal_shape.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+[16] (./graphs/fail_retta_digi.tex
 (../img/nofloat/../../graphs/fail_retta_digi.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -10136,7 +10170,12 @@ File: ../img/nofloat/../../graphs/fail_retta_digi.tex Graphic file (type tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./hist/confronto_ris_temp_CFTD_linear.tex
+)
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+(./hist/confronto_ris_temp_CFTD_linear.tex
 (../img/nofloat/../../hist/confronto_ris_temp_CFTD_linear.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -10236,8 +10275,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16] (./hist/spectrum_digi_ch0.tex
-(../img/nofloat/../../hist/spectrum_digi_ch0.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+(./hist/spectrum_digi_ch0.tex (../img/nofloat/../../hist/spectrum_digi_ch0.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -10246,7 +10289,6 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 File: ../img/nofloat/../../hist/spectrum_digi_ch0.tex Graphic file (type tex)
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -10321,12 +10363,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
@@ -10581,19 +10623,22 @@ Package rerunfilecheck Info: File `Relazione.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 75555 strings out of 493304
- 1579120 string characters out of 6139871
- 2400150 words of memory out of 5000000
- 77669 multiletter control sequences out of 15000+600000
- 130523 words of font info for 145 fonts, out of 8000000 for 9000
+ 77261 strings out of 493304
+ 1613705 string characters out of 6139871
+ 2405908 words of memory out of 5000000
+ 79366 multiletter control sequences out of 15000+600000
+ 131248 words of font info for 148 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 66i,13n,92p,10447b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,13n,92p,10447b,1024s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/texmf/fonts/enc/dvips/tex
 -gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/sha
@@ -10601,13 +10646,14 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/type1
-/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pf
-b></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (33 pages, 550994 bytes).
+-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texmf/fonts/type1/pub
+lic/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pfb></
+usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on Relazione.pdf (33 pages, 575534 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
+ 351 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
  36981 words of extra memory for PDF output out of 42996 (max. 10000000)
 

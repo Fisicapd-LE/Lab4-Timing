@@ -5,60 +5,61 @@ e non tempi assoluti (vista tutta l'elettronica utilizzata). Le misure sono stat
 \begin{itemize}
 \item la distanza tra i due rivelatori
 \item i diversi ritardi nella rivelazione nelle due diverse configurazioni
-\item le dimensioni del piombo contenente la sorgente
+\item le dimensioni dello spessore di piombo contenente la sorgente
 \item il datasheet dei rivelatori
 \end{itemize}
-Si cerchi una formula per ricavare la velocità della luce date queste informazioni. Il ragionamento farà uso di due approssimazioni: la sorgente è puntiforme lungo la direzione
-di volo dei fotoni rivelati (assumibile in quanto consisteva in un disco posto in maniera perpendicolare a tale direzione)
-e si può pensare il fotone venga rivelato sempre nella stessa posizione dentro il rivelatore.\\
+Si è cercata una formula per ricavare la velocità della luce date queste informazioni. Il ragionamento fa uso di due approssimazioni: la sorgente è puntiforme lungo la direzione
+di volo dei fotoni rivelati (assumibile in quanto consistente in un disco posto in maniera perpendicolare a tale direzione)
+e che il fotone venga rivelato in media sempre nella stessa posizione dentro il rivelatore.\\
 
 Con tali ipotesi, si considerino le misure di lunghezze con la seguente notazione:
 \begin{itemize}
 \item $R_1$ indica lo spazio medio percorso dai fotoni nel rivelatore prima di interagire con lo stesso
 \item $x_1$ indica la distanza tra la placca in piombo più vicina e il rivelatore 1
 \item $\delta_1$ indica lo spessore della placca in piombo più vicina al rivelatore 1
+\item \textit{Configurazione A}: quella con sorgente attaccata al rivelatore 1
+\item \textit{Configurazione B}: quella con sorgente attaccata al rivelatore 2
 \end{itemize}
-E analoga notazione per quanto riguarda il rivelatore 2. In poche parole le ipotesi fatte consistono nel fatto che i valori di $R_1$ $R_2$ si possono prendere
+E analoga notazione per quanto riguarda il rivelatore 2. In poche parole le ipotesi fatte consistono nel fatto che i valori di $R_1$ ed $R_2$ si possono prendere
 come esatti.\footnote{In realtà, questa ipotesi viene verificata nel limite delle infinite misure; dato che il campione preso è sufficientemente grande, si suppone essa sia
 valida}, mentre l'ipotesi di sorgente puntiforme è necessaria per ridurre il problema in tre dimensioni a un problema unidimensionale.\\
 \input{./img/schema_cobalto}
 
 A questo punto, se la configurazione è la A, si possono descrivere i tempi di percorrenza dei fotoni prima che vengano rivelati come:
 $$
-  t_{1A} = \frac{\delta_1 + nR_1}{c} \hspace{2cm} t_{2A} = \frac{\delta_2 + x_2 + nR_2}{c}
+  t_{1A} = \frac{\delta_1 + nR_1}{c} \hspace{2cm} t_{2A} = \frac{\delta_2 + x_{2A} + nR_2}{c}
 $$
-Ove $n$ indica un eventuale coefficiente di rifrazione all'interno del rivelatore stesso. Quindi il TAC rivelerà l'intervallo temporale:
+Ove $n$ indica un eventuale coefficiente di rifrazione all'interno del rivelatore stesso. Quindi il TAC a meno dei ritardi elettronici o inseriti, rivelerà l'intervallo temporale:
 $$
-  \delta t_A = t_{2A} - t_{1A} = \frac{\delta_2 + x_2 + nR_2-\delta_1-nR_1}{c}
+  \Delta t_A = t_{2A} - t_{1A} = \frac{\delta_2 + x_{2A} + nR_2-\delta_1-nR_1}{c}
 $$
 Analogamente per la configurazione B si trova:
 $$
-  t_{1B} = \frac{\delta_1 + x_1 + nR_1}{c} \hspace{2cm} t_{2B} = \frac{\delta_2 + nR_2}{c}
+  t_{1B} = \frac{\delta_1 + x_{1B} + nR_1}{c} \hspace{2cm} t_{2B} = \frac{\delta_2 + nR_2}{c}
 $$
 e l'intervallo rilevato dal TAC sarà:
 $$
-  \Delta t_B = t_{2B} - t_{1B} = \frac{\delta_2 + nR_2 - \delta_1 - x_1 - nR_1}{c}
+  \Delta t_B = t_{2B} - t_{1B} = \frac{\delta_2 + nR_2 - \delta_1 - x_{1B} - nR_1}{c}
 $$
 A questo punto, però, questi due intervalli non hanno senso presi singolarmente, in quanto non rivelano effettivamente un intervallo temporale ma il tempo riferito ad
 uno zero che, sebbene non sia noto oggettivamente, è lo stesso per entrambe le misure (infatti non si è toccato l'apparato strumentale se non per spostare la sorgente
 racchiusa tra le placche di piombo). Perciò ha senso fisico la loro differenza, che si può stimare con facilità:
 $$
-  \Delta t = \Delta t_A - \Delta t_B = \frac{{\delta_2 + x_2 + nR_2 - \delta_1 - nR_1}{-\delta_2 - nR_2 + \delta_1 + x_1 + nR_1}}{c} = \frac{x_1 + x_2}{c}
+  \Delta t = \Delta t_A - \Delta t_B = \frac{{\delta_2 + x_{2A} + nR_2 - \delta_1 - nR_1}{-\delta_2 - nR_2 + \delta_1 + x_{1B} + nR_1}}{c} = \frac{x_{1A} + x_{2B}}{c}
 $$
 Perciò per stimare la velocità della luce è sufficiente andare a misurare la distanza dei due rivelatori a meno delle placche di piombo e la distanza temporale tra i due
-picchi nei grafici calibrati del TAC. Però, in sede di esecuzione dell'esperimento, non si è effettivamente misurata quella distanza ma solamente le distanze tra la sorgente
-e i rivelatori nelle due configurazioni, quindi si ha una stima di $\delta$ e una stima di $ 2 \delta + x$ per i due casi.\\
+picchi nei grafici calibrati del TAC. Però, in sede di esecuzione dell'esperimento, non si è effettivamente misurata quella distanza ma solamente le distanze tra i rivelatori e lo spessore delle placche di piombo, quindi si ha una stima di $\delta$ e una stima di $d = 2 \delta + x_{2A} + 2 \delta + x_{1B} $ per i due casi.\\
 
 Si venga alla vera e propria analisi dati: si vuole applicare la formula, appena dimostrata:
 $$
-  c = \frac{x_1+x_2}{\Delta t}
+  c = \frac{x_{1B}+x_{2A}}{\Delta t}
 $$
 si ragioni sul numeratore, cioè la misura di lunghezza: si conoscono i valori, misurati con il metro:
 $$
   d = 173.2 cm \hspace{2cm} \delta = 3.7 cm
 $$
 ove d indica la distanza tra i due rivelatori e $\delta$ indica le misure (uguali) dei blocchi di piombo.
-Ora si è interessati a $x_1+x_2$, per motivi geometrici si può riscrivere in funzione delle variabili misurate come:
+Ora si è interessati a $x_{1B}+x_{2A}$, per motivi geometrici si può riscrivere in funzione delle variabili misurate come:
 $$
   x_1+x_2 = 2 ( d - 2 \delta)
 $$
@@ -68,21 +69,21 @@ $$
 $$
 \\
 
-Ora si pensi al denominatore dell'equazione per la velocità della luce, cioè la differenza tra le distanze temporali nelle due diverse configurazioni dell'esperimento.
+Ora si consideri il denominatore dell'equazione per la velocità della luce, cioè la differenza tra le distanze temporali nelle due diverse configurazioni dell'esperimento.
 Si riscriva tenendo conto della calibrazione:
 $$
-  \Delta t = \Delta t_A - \Delta t_B = m\Delta t_A + q - m\Delta t_B - q = m (\Delta t_A - \Delta t_B) 
+  \Delta t = \Delta t_{A[ns]} - \Delta t_{B[ns]} = m\Delta t_{A_{CH}} + q - m\Delta t_{B_{CH}} - q = m (\Delta t_{A_{CH}} - \Delta t_{B_{CH}}) 
 $$
-Ove $m,q$, sono i coefficienti della calibrazione stimati nelle sezioni precedenti. I due picchi si possono vedere, già calibrati, nella figura sottostante.\\
+Ove $m,q$, sono i coefficienti della calibrazione temporale stimati nelle sezioni precedenti. I due picchi si possono vedere, già calibrati, nella Figura \ref{hist:luce_centroidi}.\\
 \input{./graphs/light}
 Nonostante questa figura sia utile da vedere in quanto calibrata, è necessario operare con i centroidi non calibrati se si vuole avere un'analisi che tenga conto anche
-della correlazione degli errori di calibrazione. Quindi, nella tabella sottostante, si riportano i valori dei centroidi sia prima della calibrazione (quindi in canali)
-che dopo la calibrazione (e quindi in nanosecondi), con gli errori presentati come errori sui parametri dell'interpolazione fatta:
+della correlazione degli errori di calibrazione. Quindi, nella Tabella \ref{tab:luce_centroidi}, si riportano i valori dei centroidi sia prima della calibrazione (quindi in canali)
+che dopo la calibrazione (e quindi in nanosecondi), con gli errori presentati come errori sui parametri dell'interpolazione gaussiana fatta.
 \input{tables/luce_centroidi}
 
-In questi dati l'errore sul centroide in secondi è stato preso interpolando i dati una volta fatta la calibrazione, quindi non tenendo conto degli errori nei parametri
+In questi dati l'errore sul centroide in nanosecondi è stato preso interpolando i dati una volta fatta la calibrazione, quindi non tenendo conto degli errori nei parametri
 di calibrazione, che sarebbero errori agli ordini superiori. Tale problema non è così importante in quanto questi dati si presentano solo per completezza, non vengono in
-alcun caso usati per l'effettivo calcolo della velocità della luce, hanno il solo scopo di presentare un plausibile errore da associare alla misura di tempo.
+alcun caso usati per l'effettivo calcolo della velocità della luce, hanno il solo scopo di presentare un plausibile errore da associare alla misura di tempo.\\
 
 Presentati questi dati, è possibile passare alla vera e propria stima della velocità della luce, alla quale è ovviamente necessario associare un errore. Dati i preamboli
 fatti, si può considerare la formula (espansa in modo da risolvere i problemi di correlazione, perciò è possibile ottenere l'errore tramite semplice propagazione
@@ -92,5 +93,5 @@ $$
 $$
 \\
 
-Si noti che non si sta considerando correlazione tra le misure spaziali (cioè si considera il metro supponendo che la scala su di esso stampata sia perfetta)
+Si noti che non si sta considerando correlazione tra le misure spaziali (cioè si considera il metro supponendo che la scala su di esso stampata sia perfetta) e che si considera il campione sufficientemente ampio da rendere trascurabile le fluttuazione della posizione di interazione del fotone all'interno del rivelatore.
 

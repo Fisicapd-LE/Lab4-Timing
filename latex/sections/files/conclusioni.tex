@@ -4,19 +4,17 @@ Per quanto riguarda la calibrazione in tempo ed in energia, tutti i risultati so
 dei rivelatori sono risultate simili), e la calibrazione in tempo coincide con le aspettative. In tutti i grafici in energia è stato abbastanza semplice riconoscere le spalle
 Compton e non si sono riconosciuti fenomeni particolari.\\
 
-Per quanto riguarda lo studio della risoluzione utilizzando la sorgente di Cobalto al posto di quella di sodio si è notato effettivamente che lo spettro coincideva con
-quello teorico; la risoluzione tende a migliorare all'aumentare dell'energia come ci si aspetta (infatti più energetici sono i fotoni più alta è la probabilità di interazione
-all'interno del rivelatore, e se la probabilità di interazione è più alta i due punti di interazione all'interno dei due rivelatori saranno più simili, il che porta
-ad una risoluzione minore).\\
+Per quanto riguarda lo studio della risoluzione utilizzando la sorgente di cobalto al posto di quella di sodio si è notato effettivamente che lo spettro coincideva con
+quello teorico; la risoluzione tende a migliorare all'aumentare dell'energia. Si può ipotizzare che tale fenomeno sia dovuto al fatto che aumentando l'energia aumenta il rapporto del segnale rumore e quindi l'efficienza del CFTD.\\
 
 A proposito della misura della velocità della luce, effettivamente il valore ottenuto è abbastanza vicino al valore presente in letteratura, anche se l'errore è stato
-evidentemente sottostimato, probabilmente a causa di una sottostima di tutti gli effetti strumentali legati alla strumentazione elettronica: la differenza temporale
-tra i due segnali è effettivamente molto piccola per poter associare una misura molto precisa ad essa, e l'errore associato è di ordini di grandezza inferiore a quello che
-ci si aspetta, risulta poco plausibile pensare che con un simile apparato strumentale si possa avere un errore su una misura temporale dell'ordine dei picosecondi.\\
+evidentemente sottostimato, probabilmente a causa di una sottostima di tutti gli effetti strumentali legati all'elettronica: la differenza temporale
+tra i due segnali è effettivamente molto piccola per poter poter essere misurata con alta precisione, e l'errore associato è di ordini di grandezza inferiore a quello che
+ci si aspetta, risulta poco plausibile pensare che con un simile apparato strumentale si possa avere un errore su una misura temporale dell'ordine dei picosecondi (si stanno trascurando probabilmente degli errori strumentali che garantiscono l'accuratezza dell'apparato, come la discretizzazione in canali da parte dell'ADC).\\
 
 Lo studio del sistema di acquisizione digitale ha rivelato come il digitizer utilizzato non sia adeguato alle misurazioni prese: infatti sebbene i grafici rivelino una
-forma più \textit{appuntita} (e quindi sembrano associare errori più piccoli), non sono effettivamente buone gaussiane. Probabilmente tale problema è da imputare al
-campionamento non sufficiente dal digitizer stesso, come evidenziato nella sezione apposita, a seconda del punto di campionamento lo \textit{zero crossing} avviene in
+forma più \textit{piccata} (e quindi sembrano associare errori più piccoli), non sono effettivamente buone gaussiane. Probabilmente tale problema è da imputare alla frequenza di
+campionamento non sufficiente del digitizer stesso: come evidenziato nella sezione apposita, a seconda del punto di campionamento lo \textit{zero crossing} avviene in
 punti diversi, e tale errore è di stima molto difficile. Questo problema rende meno importante il confronto tra le risoluzioni nei due metodi: sebbene la FWHM sia minore
 nel caso dell'analisi digitale, essa presenta fenomeni strumentali non imputabili a effetti fisici, e quindi non permette di prendere dati attendibili, perciò si preferisce
 lo studio analogico.

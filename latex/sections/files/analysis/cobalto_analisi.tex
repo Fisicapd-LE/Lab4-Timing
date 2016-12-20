@@ -1,12 +1,12 @@
 \subsection{Studio della risoluzione temporale al variare dell'energia}
 
-Una volta ultimata la calibrazione, si è voluto andare a stimare la risoluzione temporale dell'apparato al variare dell'energia depositata sui
-rivelatori. Per farlo, si sono analizzati i dati con riferimento all'energia depositata all'interno dei rivelatori: quando la media dell'energia
-depositata nei due rivelatori era sopra una certa soglia (o al di fuori della finestra prescelta) si è rimosso tale dato dal campione: ripetendo più
-volte questo procedimento al variare della soglia e al variare della finestra è stato possibile stimare la risoluzione temporale. Tale
-risoluzione è stata stimata andando a fare un'interpolazione gaussiana dei dati ottenuti in uscita dal TAC, selezionati come precedentemente descritto.
+Una volta ultimata la calibrazione, si è voluto andare a stimare la risoluzione temporale dell'apparato al variare dell'energia.
+Per farlo, si sono analizzati i dati con riferimento all'energia depositata all'interno dei rivelatori: si sono analizzati solo i dati tali
+che la media delle due energie
+fosse sotto una certa soglia (o al all'interno di un certo intervallo): ripetendo più
+volte questo procedimento al variare della soglia dell'intervallo è stato possibile stimare la risoluzione temporale al variare dell'energia. Per farlo si è fatta un'interpolazione gaussiana dei dati ottenuti in uscita dal TAC, selezionati come precedentemente descritto.
 Dato che tale calcolo è stato fatto per molti intervalli di energia, non si riportano tutti i grafici creati singolarmente.
-Nella tabella \ref{tab:cobalto_res} si possono leggere i risultati ottenuti. Per ottenere tali risultati l'interpolazione è stata fatta dopo aver calibrato i grafici e
+Nella Tabella \ref{tab:cobalto_res} si possono leggere i risultati ottenuti. Per ottenere tali risultati l'interpolazione è stata fatta dopo aver calibrato i grafici e
 considerando le calibrazioni come perfette (infatti per il conto della risoluzione non è necessaria una precisione così alta, e i risultati sono uguali a meno di ordini
 superiori nell'errore)\\
 
@@ -18,12 +18,12 @@ superiori nell'errore)\\
 	\label{tab:cobalto_res}
 \end{table}
 %
-Nelle figure \ref{hist:bella_soglia} e \ref{hist:bella_intervalla} si sono riportate le gaussiane al variare rispettivamente della soglia e dell'intervallo utilizzato.
+Nelle Figure \ref{hist:bella_soglia} e \ref{hist:bella_intervalla} si sono riportate le gaussiane al variare rispettivamente della soglia e dell'intervallo utilizzato.
 \input{./hist/bella_soglia}
 \input{./hist/bella_intervalla}
-Nella figura \ref{gr:cobalto_risoluzioni}, inoltre, si possono vedere i risultati dell'analisi, cioè la risoluzione al variare dell'energia rappresentati su un grafico.
-Un grafico analogo è stato costruito con l'utilizzo delle soglie nella figura \ref{gr:cobalto_soglie}. Si
-vede con evidenza che la risoluzione tende a decrescere all'aumentare dell'energia.
+Nella Figura \ref{gr:cobalto_risoluzioni}, inoltre, si possono vedere i risultati dell'analisi, cioè la risoluzione al variare dell'energia rappresentati su un grafico.
+Un grafico analogo è stato costruito con l'utilizzo delle soglie nella Figura \ref{gr:cobalto_soglie}. Si
+vede con evidenza che la risoluzione tende a migliorare all'aumentare dell'energia.
 \input{./graphs/cobalto_risoluzioni}\\
 \input{./graphs/cobalto_soglie}\\
 
